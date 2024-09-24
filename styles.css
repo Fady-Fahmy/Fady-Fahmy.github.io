@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #eaeaea; /* Set a light grey background color */
 }
 
 header {
@@ -19,7 +19,8 @@ header {
     border-radius: 50%; /* This makes the image circular */
     object-fit: cover; /* This ensures the image covers the entire area */
     border: 3px solid #fff; /* Optional: Add a border around the image */
-    margin: 20px 0; /* Space above and below the image */
+    margin: 20px auto; /* Center the image */
+    display: block; /* Make the image a block element to center it */
 }
 
 nav {
@@ -45,7 +46,7 @@ nav ul li a {
 section {
     padding: 20px;
     margin: 20px auto;
-    background: #fff;
+    background: #fff; /* White background for content sections */
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
