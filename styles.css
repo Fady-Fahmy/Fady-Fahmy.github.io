@@ -62,4 +62,22 @@ footer {
     width: 100%;
 }
 
-/* Add any additional styles for your projects and certifications as needed */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin: 20px 0; /* Margin for separation */
+}
+
+.social-icons a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-icons img {
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
