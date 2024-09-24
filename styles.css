@@ -14,9 +14,9 @@ header {
 }
 
 .circular-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 60%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     margin: 20px 0;
 }
 
