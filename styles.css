@@ -114,27 +114,4 @@ footer {
     border-radius: 50%;
 }
 
-input:checked + .slider {
-    background-color: #4a4a4a; /* Darker color when activated */
-}
-
-input:checked + .slider:before {
-    transform: translateX(26px);
-}
-
-/* Rounded switch */
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
-
-#theme-toggle p {
-    display: inline;
-    margin-left: 10px;
-    font-size: 18px;
-    vertical-align: middle;
-}
 
