@@ -94,6 +94,27 @@ body.dark-mode .certification:hover {
     background-color: #3a3a3a;
 }
 
+/* Default (Light Mode) Styles */
+h3 {
+    color: #333; /* Dark grey for light mode */
+}
+
+/* Dark Mode Styles */
+body.dark-mode h3 {
+    color: #ffffff; /* White color for dark mode, if background is dark */
+}
+
+/* Ensure other headings (h1, h2, etc.) remain visible in both modes */
+body.dark-mode h2, 
+body.dark-mode h1 {
+    color: #ffffff; /* White text for headers in dark mode */
+}
+
+body.dark-mode p, 
+body.dark-mode li {
+    color: #cccccc; /* Light grey for text in dark mode */
+}
+
 
 .profile-pic {
     width: 50px;

@@ -34,6 +34,26 @@ darkModeToggle.addEventListener('click', () => {
     });
 });
 
+
+const darkModeToggle = document.getElementById('darkmodeToggle');
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    // Check if dark mode is active and adjust colors accordingly
+    if (document.body.classList.contains('dark-mode')) {
+        // If in dark mode, ensure h3 text is visible
+        document.querySelectorAll('h3').forEach(h3 => {
+            h3.style.color = '#ffffff'; // Set h3 text to white in dark mode
+        });
+    } else {
+        // Revert to default colors in light mode
+        document.querySelectorAll('h3').forEach(h3 => {
+            h3.style.color = '#333'; // Set h3 text back to dark grey
+        });
+    }
+});
+
+
 // Dark mode persistence across sessions
 if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-mode');
