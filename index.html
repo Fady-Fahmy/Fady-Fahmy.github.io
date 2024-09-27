@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,8 @@
 </head>
 
 <body>
-    <header>
+  <header>
+     <div class="header-content">
         <img src="https://maxclere13.github.io/photo.png" alt="Fady Fahmy" width="200">
         <nav>
             <ul>
@@ -18,23 +20,21 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
-                <LI><a href="#Technical Skills">Technical Skills</a></li>
+                <LI><a href="#Skills">Technical Skills</a></li>
                 <li><a href="#connect">Connect</a></li>
             </ul>
         </nav>
-    </header>
-
-<script>
-function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-}
-</script>
+        <button onclick="toggleDarkMode()" class="dark-mode-btn">Toggle Dark Mode</button>
+     </div>
+  </header>
 
     <section id="about">
         <section id="about">
     <h2>About Me</h2>
-    <p>Fady is a rising senior computer science student at John Jay College with a focus on cloud and cyber security. He has worked with Python, C++ , bash , and Mysql. familiarity with networking fundamentals, security basics, data structures, cryptography, threat intelligence, OSINT, and Splunk. A proven track record of academic excellence, including a 3.82 GPA.</p>
-</section>
+    <p>
+Fady is a rising senior computer science student at John Jay College with a focus on cloud and cyber     security. He has worked with Python, C++ , bash , and Mysql. familiarity with networking fundamentals, security basics, data structures, cryptography, threat intelligence, OSINT, and Splunk. A proven track record of academic excellence, including a 3.82 GPA.
+    </p>
+    </section>
 
     <section id="education">
         <h2>📚 Education</h2>
@@ -154,11 +154,15 @@ function toggleDarkMode() {
             <img src="https://maxclere13.github.io/OPSWAT.png" alt="OPSWAT Introduction to Critical Infrastructure Protection" width="50">
         </li>
 
-        <li><a href="https://www.credential.net/344c639e-eebc-4e06-ad6b-098dee3596c1#gs.6jn6ec">IriusRisk - Certified Threat Modeling</a></li>
-        <img src="https://maxclere13.github.io/Irius.png" alt="IriusRisk - Certified Threat Modeling" width="50">
+        <li>
+           <a href="https://www.credential.net/344c639e-eebc-4e06-ad6b-098dee3596c1#gs.6jn6ec">IriusRisk - Certified Threat Modeling</a></li>
+           <img src="https://maxclere13.github.io/Irius.png" alt="IriusRisk - Certified Threat Modeling" width="50">
+        </li>
 
-        <li><a href="https://drive.google.com/file/d/1sQXOTQxhmBZnlA649j9FT42JYBTL_87i/view?usp=sharing">Foundational Cyber Intelligence Analyst</a></li>
-        <img src="https://maxclere13.github.io/CTI.png" alt="Foundational Cyber Intelligence Analyst" width="50">
+        <li>
+           <a href="https://drive.google.com/file/d/1sQXOTQxhmBZnlA649j9FT42JYBTL_87i/view?usp=sharing">Foundational Cyber Intelligence Analyst</a></li>
+           <img src="https://maxclere13.github.io/CTI.png" alt="Foundational Cyber Intelligence Analyst" width="50">
+        </li>
 
         <li><a href="https://drive.google.com/file/d/1sm7kb8dQFLlvqMd7NS8dPHWHWHJ21-VS/view?usp=sharing">ComTIA Network Plus</a></li>
 
@@ -211,5 +215,12 @@ function toggleDarkMode() {
     <footer>
         <p>© 2024 Fady Fahmy. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+
 </body>
 </html>
