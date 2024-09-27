@@ -28,6 +28,19 @@ header {
     padding: 0 20px;
 }
 
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for scaling and opacity */
+}
+
+.social-icons img:hover {
+    transform: scale(1.15); /* Scale the icon up to 115% on hover */
+    opacity: 0.8; /* Slightly decrease opacity for hover effect */
+}
+
+
+
 /* Certifications Section */
 #certifications {
     margin: 40px auto;
