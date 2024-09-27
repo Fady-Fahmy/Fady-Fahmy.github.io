@@ -28,6 +28,86 @@ header {
     padding: 0 20px;
 }
 
+/* Certifications Section */
+#certifications {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox for certification entries */
+.certification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.certification:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for text content in certifications */
+.cert-text {
+    flex: 1; /* Take the majority of space */
+}
+
+.cert-text h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #4a4a4a;
+}
+
+.cert-text p {
+    margin: 5px 0;
+    color: #777;
+}
+
+/* Styling for badge images in certifications */
+.cert-badge {
+    width: 100px; /* Fixed width for badge */
+    flex-shrink: 0; /* Prevents badge from shrinking */
+    margin-left: 20px;
+}
+
+.cert-badge img {
+    width: 100%; /* Make the badge image fit the container */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the badge */
+}
+
+/* Adjust hover effects for certification badges */
+.cert-badge img:hover {
+    transform: scale(1.05); /* Slightly enlarges the badge on hover */
+    transition: transform 0.3s;
+}
+
+/* Dark mode adjustments for certifications */
+body.dark-mode .certification {
+    background-color: #2c2c2c;
+    border-color: #444;
+}
+
+body.dark-mode .cert-text h3, 
+body.dark-mode .cert-text p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .certification:hover {
+    background-color: #3a3a3a;
+}
+
+
 .profile-pic {
     width: 50px;
     height: 50px;
