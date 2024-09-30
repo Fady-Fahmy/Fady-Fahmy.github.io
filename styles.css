@@ -15,12 +15,12 @@ header {
     color: #fff;
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure header stays on top */
+    z-index: 800; /* Ensure header stays on top */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
 .header-content {
-    max-width: 800px; /* Keeps the content from stretching too wide */
+    max-width: 1200px; /* Keeps the content from stretching too wide */
     margin: 0 auto; /* Centers the content block */
     display: flex;
     justify-content: center; /* Center the items as a group */
@@ -28,7 +28,6 @@ header {
     padding: 0 20px; /* Maintain horizontal padding */
     text-align: center;  
 }
-
 
 header ul {
     list-style-type: none;
