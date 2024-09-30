@@ -98,8 +98,8 @@ nav ul li a:hover {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    max-width: 900px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 920px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* List styling for certifications */
