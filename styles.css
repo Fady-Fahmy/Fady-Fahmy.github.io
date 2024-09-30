@@ -46,7 +46,7 @@ header li {
 header a {
     text-decoration: none; /* Remove underline from links */
     color: #fff; /* White text color for links */
-    font-size: 14px; /* Set the font size for links */
+    font-size: 20px; /* Set the font size for links */
     font-weight: bold; /* Make the link text bold */
     padding: 8px 15px; /* Slightly reduce padding for better fit */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
