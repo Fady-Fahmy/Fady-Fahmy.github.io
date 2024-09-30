@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: #f0f0f0; /* Light grey background */
     color: #333; /* Dark grey text */
-    line-height: 1.1; /* Improve readability */
+    line-height: 1.4; /* Improve readability */
 }
 
 header {
@@ -46,9 +46,9 @@ header li {
 header a {
     text-decoration: none; /* Remove underline from links */
     color: #fff; /* White text color for links */
-    font-size: 10px; /* Slightly reduce font size for better fit */
+    font-size: 14px; /* Slightly reduce font size for better fit */
     font-weight: bold; /* Make the link text bold */
-    padding: 8px 12px; /* Reduce padding to fit better in header */
+    padding: 8px 14px; /* Reduce padding to fit better in header */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
