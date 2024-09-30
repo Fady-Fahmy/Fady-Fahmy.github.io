@@ -26,7 +26,7 @@ header {
     display: flex;
     justify-content: space-between; /* Space items evenly with equal space between */
     align-items: center; /* Vertically center the items */
-    padding: 0 100px; /* Maintain horizontal padding */
+    padding: 0 25px; /* Maintain horizontal padding */
     text-align: center;
 }
 
@@ -46,7 +46,7 @@ header li {
 header a {
     text-decoration: none; /* Remove underline from links */
     color: #fff; /* White text color for links */
-    font-size: 30px; /* Set the font size for links */
+    font-size: 100px; /* Set the font size for links */
     font-weight: bold; /* Make the link text bold */
     padding: 8px 15px; /* Slightly reduce padding for better fit */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
