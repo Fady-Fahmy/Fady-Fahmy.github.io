@@ -8,30 +8,20 @@ body {
     line-height: 1.6; /* Improve readability */
 }
 
+/* Combined Header Styles */
 header {
     text-align: center;
-    padding: 0 20px;
-    background-color: #2c2c2c; /* Darker grey for header */
+    padding: 15px 20px;
+    background-color: #1a1a1a; /* Use the darker background */
     color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Ensure header stays on top */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-}
-
-}
-
-/* Modernized Header Styles */
-header {
-    background-color: #1a1a1a;
-    padding: 15px 0;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure header stays on top */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
+/* Navigation list styles */
 header ul {
     list-style-type: none;
     margin: 0;
@@ -40,10 +30,12 @@ header ul {
     justify-content: space-around;
 }
 
+/* List item styles */
 header li {
     display: inline;
 }
 
+/* Link styles */
 header a {
     text-decoration: none;
     color: #fff;
@@ -53,6 +45,7 @@ header a {
     transition: all 0.3s ease;
 }
 
+/* Link hover styles */
 header a:hover {
     color: #ff9900;
     background-color: #333;
