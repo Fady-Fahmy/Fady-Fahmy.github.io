@@ -20,13 +20,15 @@ header {
 }
 
 .header-content {
-    max-width: 800px; /* Updated from 20px to 800px */
-    margin: 0 auto;
+    max-width: 800px; /* Keeps the content from stretching too wide */
+    margin: 0 auto; /* Centers the content block */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    justify-content: center; /* Center the items as a group */
+    align-items: center; /* Align items vertically */
+    padding: 0 20px; /* Maintain horizontal padding */
+    text-align: center;  
 }
+
 
 header ul {
     list-style-type: none;
