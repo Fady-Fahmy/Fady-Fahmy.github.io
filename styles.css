@@ -20,13 +20,14 @@ header {
 }
 
 .header-content {
-    max-width: 1200px; /* Keeps the content from stretching too wide */
+    max-width: 1000px; /* Keeps the content from stretching too wide */
     margin: 0 auto; /* Centers the content block */
     display: flex;
-    justify-content: center; /* Center the items as a group */
+    justify-content: space-between; /* Center the items as a group */
     align-items: center; /* Align items vertically */
     padding: 0 20px; /* Maintain horizontal padding */
     text-align: center;  
+    white-space: nowrap;
 }
 
 header ul {
