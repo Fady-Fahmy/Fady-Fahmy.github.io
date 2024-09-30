@@ -21,7 +21,7 @@ header {
 }
 
 .header-content {
-    max-width: 100%; /* Make sure the content spans the entire header */
+    max-width: 50%; /* Make sure the content spans the entire header */
     margin: 0 auto; /* Centers the content block */
     display: flex;
     justify-content: space-between; /* Center the items as a group */
