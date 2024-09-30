@@ -245,6 +245,9 @@ h2.dark-mode {
     color: #e0e0e0; /* Lighter navigation links */
 }
 
+
+
+<!--
 .form-group {
   margin-bottom: 15px;
 }
@@ -279,6 +282,7 @@ textarea.form-control {
 .btn:hover {
   background-color: #0056b3;
 }
+-->
 
 .resume-button {
   display: inline-block;
