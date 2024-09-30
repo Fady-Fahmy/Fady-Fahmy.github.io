@@ -10,7 +10,7 @@ body {
 
 header {
     text-align: center;
-    padding: 15px 0; /* Reduce vertical padding to adjust height */
+    padding: 20px 0; /* Reduce vertical padding to adjust height */
     background-color: #2c2c2c; /* Darker grey for header */
     color: #fff;
     position: sticky;
@@ -26,7 +26,7 @@ header {
     display: flex;
     justify-content: space-between; /* Center the items as a group */
     align-items: center; /* Align items vertically */
-    padding: 0 10px; /* Slightly reduce horizontal padding */
+    padding: 0 14px; /* Slightly reduce horizontal padding */
     text-align: center;  
 }
 
@@ -46,9 +46,9 @@ header li {
 header a {
     text-decoration: none; /* Remove underline from links */
     color: #fff; /* White text color for links */
-    font-size: 12px; /* Slightly reduce font size for better fit */
+    font-size: 10px; /* Slightly reduce font size for better fit */
     font-weight: bold; /* Make the link text bold */
-    padding: 8px 15px; /* Reduce padding to fit better in header */
+    padding: 8px 12px; /* Reduce padding to fit better in header */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
