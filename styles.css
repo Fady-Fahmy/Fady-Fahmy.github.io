@@ -26,7 +26,7 @@ header {
     display: flex;
     justify-content: space-between; /* Space items evenly with equal space between */
     align-items: center; /* Vertically center the items */
-    padding: 0 25px; /* Maintain horizontal padding */
+    padding: 0 20px; /* Maintain horizontal padding */
     text-align: center;
 }
 
