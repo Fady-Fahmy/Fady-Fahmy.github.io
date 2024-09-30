@@ -32,3 +32,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Sticky Header
+window.addEventListener("scroll", function() {
+    const header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+// Toggle Mobile Menu
+document.querySelector(".menu-toggle").addEventListener("click", function() {
+    const header = document.querySelector("header");
+    header.classList.toggle("active");
+});
