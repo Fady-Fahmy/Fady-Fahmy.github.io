@@ -20,10 +20,7 @@ if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-mode');
 }
 
-// Save dark mode state to localStorage
-localStorage.setItem('theme', 'dark');
-
-// JavaScript for smooth scrolling
+// JavaScript for smooth scrolling for all anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -32,4 +29,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
