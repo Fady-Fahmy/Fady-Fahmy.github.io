@@ -21,7 +21,7 @@ header {
 }
 
 .header-content {
-    max-width: 950px; /* Set a reasonable max width for the content */
+    max-width: 980px; /* Set a reasonable max width for the content */
     margin: 0 auto; /* Center the content horizontally */
     display: flex;
     justify-content: space-between; /* Space items evenly with equal space between */
