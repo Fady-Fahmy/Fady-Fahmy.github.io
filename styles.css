@@ -21,13 +21,13 @@ header {
 }
 
 .header-content {
-    max-width: 100%; /* Make sure the content spans the entire header */
-    margin: 0 auto; /* Centers the content block */
+    max-width: 1200px; /* Set a reasonable max width for the content */
+    margin: 0 auto; /* Center the content horizontally */
     display: flex;
-    justify-content: space-between; /* Center the items as a group */
-    align-items: center; /* Align items vertically */
-    padding: 0 10px; /* Slightly reduce horizontal padding */
-    text-align: center;  
+    justify-content: space-between; /* Space items evenly with equal space between */
+    align-items: center; /* Vertically center the items */
+    padding: 0 20px; /* Maintain horizontal padding */
+    text-align: center;
 }
 
 header ul { 
@@ -46,9 +46,9 @@ header li {
 header a {
     text-decoration: none; /* Remove underline from links */
     color: #fff; /* White text color for links */
-    font-size: 12px; /* Slightly reduce font size for better fit */
+    font-size: 12px; /* Set the font size for links */
     font-weight: bold; /* Make the link text bold */
-    padding: 8px 15px; /* Reduce padding to fit better in header */
+    padding: 8px 15px; /* Slightly reduce padding for better fit */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
@@ -61,7 +61,7 @@ header a:hover {
 nav ul {
     list-style: none; /* Remove bullet points from nav list */
     display: flex; /* Align list items in a row */
-    gap: 10px; /* Reduce gap between navigation items */
+    gap: 15px; /* Adjust gap between navigation items */
     padding: 0; /* Remove default padding */
     margin: 0; /* Remove default margin */
 }
@@ -74,6 +74,7 @@ nav ul li a {
     letter-spacing: 0.5px; /* Add space between letters */
     transition: color 0.3s; /* Smooth transition for color change on hover */
 }
+
 
 
 nav ul li a:hover {
