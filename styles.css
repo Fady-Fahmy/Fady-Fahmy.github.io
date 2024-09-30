@@ -28,6 +28,32 @@ header {
     padding: 0 20px;
 }
 
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header li {
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+header a:hover {
+    color: #ff9900;
+    background-color: #333;
+    border-radius: 5px;
+
 .social-icons img {
     width: 30px;
     height: 30px;
