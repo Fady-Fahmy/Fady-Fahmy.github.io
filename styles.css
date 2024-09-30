@@ -57,6 +57,27 @@ header a:hover {
     border-radius: 5px;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff; /* White text for navigation */
+    text-transform: uppercase; /* All caps for nav links */
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Subtle gold hover effect */
+}
+
 .social-icons img {
     width: 30px;
     height: 30px;
@@ -123,27 +144,6 @@ ul {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li a {
-    color: #fff; /* White text for navigation */
-    text-transform: uppercase; /* All caps for nav links */
-    text-decoration: none;
-    font-size: 14px;
-    letter-spacing: 1px;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffd700; /* Subtle gold hover effect */
 }
 
 section {
