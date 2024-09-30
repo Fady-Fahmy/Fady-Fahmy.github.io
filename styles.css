@@ -21,12 +21,12 @@ header {
 }
 
 .header-content {
-    max-width: 1000px; /* Set a reasonable max width for the content */
+    max-width: 1100px; /* Set a reasonable max width for the content */
     margin: 0 auto; /* Center the content horizontally */
     display: flex;
     justify-content: space-between; /* Space items evenly with equal space between */
     align-items: center; /* Vertically center the items */
-    padding: 0 20px; /* Maintain horizontal padding */
+    padding: 0 100px; /* Maintain horizontal padding */
     text-align: center;
 }
 
