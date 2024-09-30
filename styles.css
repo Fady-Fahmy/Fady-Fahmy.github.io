@@ -15,7 +15,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Upgraded Header Styles */
 header {
     background-color: #1a1a1a; /* Modern, dark background */
     color: #fff;
@@ -29,6 +28,13 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between menu items */
+    align-items: center; /* Ensure items are vertically aligned */
 }
 
 header.sticky {
