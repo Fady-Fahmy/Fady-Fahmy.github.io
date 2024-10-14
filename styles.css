@@ -201,14 +201,14 @@ ul {
     transition: transform 0.3s;
 }
 -------------------------------------------------------------------
-.icon {
-   width: 25px;
+.icon { 
+   width: 20px; /* Reduced size for better alignment */
    height: auto;
-   margin-right: 15px;
-   der-radius: 4px;
+   margin-right: 10px; /* Adjusted margin for better spacing */
+   border-radius: 4px; /* Fixed typo: 'der-radius' to 'border-radius' */
    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+   vertical-align: middle; /* Align icon vertically with text */
 }
-
 
 .profile-pic {
     width: 50px;
@@ -415,5 +415,13 @@ li {
 
 .project-card a:hover {
     color: #2980b9;
+}
+
+:root {
+    --primary-bg-color: #f0f0f0;
+    --primary-text-color: #333;
+    --secondary-text-color: #555;
+    --header-bg-color: #2c2c2c;
+    --link-hover-color: #ff9900;
 }
 
