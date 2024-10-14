@@ -201,21 +201,6 @@ ul {
     transition: transform 0.3s;
 }
 -------------------------------------------------------------------
-.icon { 
-   width: 20px; /* Reduced size for better alignment */
-   height: auto;
-   margin-right: 10px; /* Adjusted margin for better spacing */
-   border-radius: 4px; /* Fixed typo: 'der-radius' to 'border-radius' */
-   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-   vertical-align: middle; /* Align icon vertically with text */
-}
-
-.experience-entry h3 {
-   display: flex;
-   align-items: center;
-   gap: 10px; /* Add gap between icon and text */
-}
-
 
 .profile-pic {
     width: 50px;
