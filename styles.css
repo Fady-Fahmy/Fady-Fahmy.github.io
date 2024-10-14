@@ -351,13 +351,13 @@ textarea.form-control {
 }
 
 .resume-button {
-    background-color: #2ecc71;
+    background-color: #6c757d;
     color: white;
     border-radius: 50px;
 }
 
 .resume-button:hover {
-    background-color: #27ae60;
+    background-color: #f0f0f0;
 }
 
 button, a {
