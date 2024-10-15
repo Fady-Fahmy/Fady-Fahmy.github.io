@@ -32,6 +32,32 @@ function toggleMenu() {
     menuIcon.setAttribute('aria-expanded', isExpanded);
 }
 
+function toggleMenu() {
+    const navMenu = document.querySelector('nav ul');
+    navMenu.classList.toggle('visible');
+}
+
+/* CSS to handle menu visibility */
+nav ul {
+    display: none; /* Hide on small screens */
+}
+
+nav ul.visible {
+    display: block; /* Show when toggled */
+}
+
+.mobile-menu-icon {
+    cursor: pointer;
+    font-size: 30px;
+    display: none; /* Hide by default */
+}
+
+/* Show mobile menu icon on smaller screens */
+@media (max-width: 768px) {
+    .mobile-menu-icon {
+        display: block;
+    }
+}
 
 // Add event listener to the mobile menu icon
 document.querySelector('.mobile-menu-icon').addEventListener('click', toggleMenu);
