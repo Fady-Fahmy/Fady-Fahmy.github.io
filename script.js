@@ -16,3 +16,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         this.classList.add('active');
     });
 });
+
+// Create the dot cursor element
+const dotCursor = document.createElement('div');
+dotCursor.classList.add('dot-cursor');
+document.body.appendChild(dotCursor);
+
+// Update dot position as mouse moves
+document.addEventListener('mousemove', (e) => {
+    dotCursor.style.left = `${e.pageX}px`;
+    dotCursor.style.top = `${e.pageY}px`;
+});
+
+// Optional: Enlarge the dot on click
+document.addEventListener('click', () => {
+    dotCursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+    setTimeout(() => {
+        dotCursor.style.transform = 'translate(-50%, -50%) scale(1)';
+    }, 200);
+});

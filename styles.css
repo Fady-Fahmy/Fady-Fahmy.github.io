@@ -447,8 +447,21 @@ button:hover, a:hover {
     color: #fff;
 }
 
+-------------------------------------------------------------
+/* Dot Cursor Styles */
+.dot-cursor {
+    position: fixed;
+    width: 12px; /* Set the size of the dot cursor */
+    height: 12px;
+    background-color: #ff7e5f; /* Set the color of the dot */
+    border-radius: 50%; /* Make it a perfect circle */
+    pointer-events: none; /* Prevent cursor interaction */
+    z-index: 9999; /* Ensure the dot cursor is on top */
+    transform: translate(-50%, -50%); /* Center the dot on the cursor */
+    transition: width 0.2s, height 0.2s, transform 0.2s; /* Add smooth animation */
+}
 
-------------------------------------------------------------------------------------
+-------------------------------------------------------------
 :root {
     --primary-bg-color: #f0f0f0;
     --primary-text-color: #333;
