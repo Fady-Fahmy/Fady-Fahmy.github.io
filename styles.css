@@ -1,7 +1,6 @@
 /* Default Light Mode Styles */   
 body {
     font-family: 'Roboto', sans-serif; /* Modern, professional font */
-    font-size: 16px;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0; /* Light grey background */
@@ -73,6 +72,7 @@ header a:hover {
     border-radius: 5px; /* Round corners on hover */
 }
 ------------------------------------------------------------
+
 h2 { 
     font-size: 28px; /* Larger font size for section headers */
     font-weight: bold;
@@ -88,6 +88,7 @@ li {
     font-size: 16px; /* Adjust bullet point font size */
     margin-bottom: 10px;
 }  
+
 ------------------------------------------------------------
 .project-link {
    display: inline-block;
