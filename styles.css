@@ -72,23 +72,27 @@ header a:hover {
     background-color: #333; /* Dark background on hover */
     border-radius: 5px; /* Round corners on hover */
 }
-
+------------------------------------------------------------
 .project-link {
    display: inline-block;
    padding: 10px 20px;
    margin: 10px 0;
-   background-color: #333;
+   background-color: #6c757d;
    color: white;
    border-radius: 5px;
    text-decoration: none;
    font-weight: bold;
+   transition: background-color 0.3s, transform 0.3s ease-in-out; /* Added smooth transition */
+
 }
 .project-link:hover {
-   background-color: #2c2c2c;
+   background-color: #2c2c2c; /* 5a6268 */
+   transform: translateY(-3px); /* Lift effect on hover */
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
 }
 
 .project-card {
-    background-color: white;
+    background-color: white; /* ffffff */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -271,8 +275,7 @@ nav ul li a:hover {
    background-color: #E1306C;
 }
 
-------------------------------------------------------------------
-
+-----------------------------------------------------------------
 
 .certification-card {
    display: flex;
