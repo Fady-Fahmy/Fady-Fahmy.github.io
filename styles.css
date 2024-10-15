@@ -451,6 +451,7 @@ button:hover, a:hover {
 -------------------------------------------------------------
 /* Dot Cursor Styles */
 .dot-cursor {
+    cursor: grab;
     position: fixed;
     width: 12px; /* Set the size of the dot cursor */
     height: 12px;
