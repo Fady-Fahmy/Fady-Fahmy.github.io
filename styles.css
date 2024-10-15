@@ -58,6 +58,10 @@ header a:hover {
     border-radius: 5px; /* Round corners on hover */
 }
 
+html {
+    scroll-padding-top: 100px; /* Adjust this value based on your header height */
+}
+
 nav ul {
     list-style: none; /* Remove bullet points from nav list */
     display: flex; /* Align list items in a row */
