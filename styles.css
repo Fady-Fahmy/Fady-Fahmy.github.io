@@ -62,16 +62,38 @@ header a:hover {
    display: inline-block;
    padding: 10px 20px;
    margin: 10px 0;
-   background-color: #2c2c2c;
+   background-color: #333;
    color: white;
    border-radius: 5px;
    text-decoration: none;
    font-weight: bold;
 }
 .project-link:hover {
-   background-color: #333;
+   background-color: #2c2c2c;
 }
 
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.project-card a:hover {
+    color: #2980b9;
+}
 
 @media (max-width: 768px) {
     .header-content {
@@ -152,7 +174,6 @@ nav ul li a:hover {
 .social-icons a[title="Instagram"] img {
    background-color: #E1306C;
 }
-
 
 
 .certification-card {
@@ -382,29 +403,6 @@ p {
 li {
     font-size: 16px; /* Adjust bullet point font size */
     margin-bottom: 10px;
-}
-
-.project-card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.project-card a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #3498db;
-}
-
-.project-card a:hover {
-    color: #2980b9;
 }
 
 :root {
