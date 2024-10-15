@@ -1,6 +1,7 @@
 /* Default Light Mode Styles */   
 body {
     font-family: 'Roboto', sans-serif; /* Modern, professional font */
+    font-size: 16px;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0; /* Light grey background */
@@ -27,7 +28,7 @@ header {
     flex-wrap: wrap; /* Allows content to wrap on smaller screens */
     justify-content: space-between; /* Space items evenly with equal space between */
     align-items: center; /* Vertically center the items */
-    padding: 0 25px; /* Maintain horizontal padding */
+    padding: 20px;
     text-align: center;
 }
 
@@ -40,6 +41,8 @@ header {
 img {
     max-width: 100%; /* Ensures images do not overflow */
     height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 10px auto;
 }
 
 header ul { 
@@ -366,16 +369,19 @@ section:hover {
 
 h2 {
     color: #333; /* Dark grey for section headers */
+    font-size: 1.8rem;
     border-bottom: 2px solid #ccc;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 1.5px;
 }
 
 p {
+    font-size: 1rem;
     color: #555; /* Softer grey for body text */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 ul {
@@ -465,6 +471,11 @@ textarea.form-control {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
 ------------------------------------------------------------------------------------
+#resume {
+    text-align: center;
+    padding: 20px;
+}
+
 .resume-button { 
     display: inline-block;
     padding: 12px 24px;
