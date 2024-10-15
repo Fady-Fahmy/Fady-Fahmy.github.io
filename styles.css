@@ -58,10 +58,6 @@ header a:hover {
     border-radius: 5px; /* Round corners on hover */
 }
 
-html {
-    scroll-padding-top: 100px; /* Adjust this value based on your header height */
-}
-
 nav ul {
     list-style: none; /* Remove bullet points from nav list */
     display: flex; /* Align list items in a row */
@@ -92,6 +88,17 @@ nav ul li a:hover {
 .social-icons img:hover {
     transform: scale(1.15); /* Scale the icon up to 115% on hover */
     opacity: 0.8; /* Slightly decrease opacity for hover effect */
+}
+
+
+------------------------------------
+html {
+    scroll-padding-top: 100px; /* Adjust this value based on your header height */
+}
+
+.section-offset {
+    position: relative;
+    scroll-margin-top: 100px; /* Adjust this based on your header height */
 }
 --------------------------------------------
 .experience-entry {
