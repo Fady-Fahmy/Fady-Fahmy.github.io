@@ -123,9 +123,11 @@ body {
 }
 
 h2 {
-    font-size: 28px; /* Larger font size for section headers */
+    font-size: 20px; /* Larger font size for section headers */
     font-weight: bold;
     color: #2c3e50; /* A deeper color for better contrast */
+    text-align: left; /* Align headers to the left */
+    margin-bottom: 15px; /* Keep spacing below the header */
 }
 
 p {
