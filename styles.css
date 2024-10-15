@@ -89,10 +89,11 @@ nav ul li a:hover {
     transform: scale(1.15); /* Scale the icon up to 115% on hover */
     opacity: 0.8; /* Slightly decrease opacity for hover effect */
 }
+--------------------------------------------
 .experience-entry {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    gap: 15px;
+    gap: 10px;
 }
 
 img {
