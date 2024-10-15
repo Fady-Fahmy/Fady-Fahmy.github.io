@@ -151,28 +151,45 @@ nav ul li a:hover {
     color: #ffd700; /* Subtle gold hover effect */
 }
 
+-------------------------------------------------------------------------
+/* Connect with Me Section */
+#connect h2 {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+    border-bottom: none; /* Remove underline */
+    font-size: 1.5em; /* Adjust heading size */
+    color: #2c3e50; /* Set a dark, professional color */
+}
+
+.social-icons {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .social-icons a {
-   display: inline-block;
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin-right: 15px; /* Adjust gap between icons */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .social-icons a img {
-   width: 40px; /* Standardize icon size */
-   height: 40px;
-   transition: transform 0.3s ease, opacity 0.3s ease; /* Added opacity transition for smooth effect */
-   padding: 10px;
-   border-radius: 50%;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
-   background-color: transparent; /* Default to transparent */
+    width: 30px; /* Reduce icon size for better alignment */
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Added opacity transition for smooth effect */
+    padding: 5px; /* Reduce padding for a more compact look */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    background-color: #f1f1f1; /* Light gray background for better contrast */
 }
 
 .social-icons a:hover {
-   transform: scale(1.15); /* Scale the entire anchor for a uniform effect */
-   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow effect on hover */
+    transform: scale(1.1); /* Scale the entire anchor slightly for a uniform effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
 
 .social-icons a:hover img {
-   opacity: 0.85; /* Decrease opacity slightly on hover for a subtle effect */
+    opacity: 0.85; /* Decrease opacity slightly on hover for a subtle effect */
 }
 
 .social-icons a[title="GitHub"] img {
@@ -186,6 +203,8 @@ nav ul li a:hover {
 .social-icons a[title="Instagram"] img {
    background-color: #E1306C;
 }
+
+------------------------------------------------------------------
 
 
 .certification-card {
