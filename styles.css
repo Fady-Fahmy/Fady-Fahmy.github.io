@@ -464,27 +464,37 @@ textarea.form-control {
     transform: translateY(-3px); /* Subtle lift effect */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
-
-.resume-button {
-    background-color: #6c757d;
+------------------------------------------------------------------------------------
+.resume-button { 
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #6c757d; /* Keep the professional gray */
     color: white;
-    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px; /* Rounded button for a modern look */
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
 }
 
 .resume-button:hover {
-    background-color: #333;
+    background-color: #5a6268; /* Slightly darker gray for hover effect */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 button, a {
-  transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 button:hover, a:hover {
-  background-color: #333;
-  color: #fff;
+    background-color: #333;
+    color: #fff;
 }
 
 
+------------------------------------------------------------------------------------
 :root {
     --primary-bg-color: #f0f0f0;
     --primary-text-color: #333;
