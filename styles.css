@@ -94,6 +94,9 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     gap: 10px;
+    margin-top: 0; /* Remove extra space between header and content */
+    padding-top: 0; /* Remove padding if there is any */
+}
 }
 
 img {
@@ -296,7 +299,7 @@ h2 {
     color: #2c3e50; /* A deeper color for better contrast */
     border-bottom: 2px solid #ccc;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
