@@ -294,7 +294,7 @@ section {
     padding: 30px;
     background-color: #fff; /* White background for sections */
     border-radius: 10px; /* Rounded corners */
-    max-width: 900px; /* Max width for readability */
+    max-width: 1000px; /* Max width for readability */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: all 0.3s ease-in-out; /* Smooth hover effect */
 }
