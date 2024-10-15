@@ -107,24 +107,88 @@ header a:hover {
     color: #2980b9;
 }
 
+------------------------------------------------------------------------
+
+/* General Styles for Larger Screens (Default) */
+body {
+    font-size: 16px; /* Default body font size */
+    line-height: 1.8; /* Improve readability with more space between lines */
+}
+
+h2 {
+    font-size: 28px; /* Larger font size for section headers */
+    font-weight: bold;
+    color: #2c3e50; /* A deeper color for better contrast */
+}
+
+p {
+    font-size: 16px; /* Base font size for paragraphs */
+    line-height: 1.8; /* Line height to add breathing space */
+}
+
+li {
+    font-size: 16px; /* Adjust bullet point font size */
+    margin-bottom: 10px;
+}
+
+/* Styles for Minimized Screens (Phones or Small Windows) */
 @media (max-width: 768px) {
+    /* Header and Navigation Adjustments */
     .header-content {
-        flex-direction: column;
+        flex-direction: column; /* Stack header elements vertically */
     }
+
     header img {
         width: 150px; /* Reduce the image size */
     }
+
     nav ul {
         display: none; /* Hide navigation on smaller screens */
     }
+
     .mobile-menu-icon {
         display: block; /* Display a hamburger icon for smaller screens */
     }
+
+    /* Font Size Adjustments for Small Screens */
+    body {
+        font-size: 1rem; /* Relative unit for better scaling */
+        line-height: 1.6; /* Slightly reduce line height for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller section header size for better balance on small screens */
+    }
+
+    p {
+        font-size: 1rem; /* Paragraphs scaled down for smaller screens */
+    }
+
+    li {
+        font-size: 1rem; /* Adjust bullet point font size for smaller screens */
+        margin-bottom: 8px; /* Reduce spacing between list items */
+    }
 }
 
+/* Optional: For Very Small Screens (e.g., Phones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem; /* Further reduce font size for very small screens */
+    }
+
+    h2 {
+        font-size: 1.3rem; /* Even smaller header to avoid overwhelming the screen */
+    }
+
+    p, li {
+        font-size: 0.9rem; /* Adjust text size to maintain readability */
+    }
+}
+
+/* Mobile Menu and Navigation Styles */
 .mobile-menu-icon {
     font-size: 30px;
-    display: none;
+    display: none; /* Hidden by default, shown in media queries */
     cursor: pointer;
     color: white;
 }
@@ -146,10 +210,10 @@ nav ul li a {
     transition: color 0.3s; /* Smooth transition for color change on hover */
 }
 
-
 nav ul li a:hover {
     color: #ffd700; /* Subtle gold hover effect */
 }
+
 
 -------------------------------------------------------------------------
 /* Connect with Me Section */
@@ -420,17 +484,6 @@ button:hover, a:hover {
   color: #fff;
 }
 
-body {
-    font-size: 1rem; /* Relative to root element */
-}
-
-h2 {
-    font-size: 1.5rem;
-}
-
-p {
-    font-size: 1rem;
-}
 
 :root {
     --primary-bg-color: #f0f0f0;
