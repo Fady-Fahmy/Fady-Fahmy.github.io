@@ -91,7 +91,7 @@ nav ul li a:hover {
 }
 
 
-------------------------------------
+-------------------------------------------------------------------------------------------
 html {
     scroll-padding-top: 100px; /* Adjust this value based on your header height */
 }
@@ -100,7 +100,7 @@ html {
     position: relative;
     scroll-margin-top: 100px; /* Adjust this based on your header height */
 }
---------------------------------------------
+---------------------------------------------------------------------------------------------
 .experience-entry {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
@@ -117,7 +117,7 @@ img {
     margin: 10px auto;
 } 
 
-------------------------------------------------------------
+---------------------------------------------------------------------------------------------
 .project-link {
    display: inline-block;
    padding: 10px 20px;
@@ -156,6 +156,21 @@ img {
 .project-card a:hover {
     color: #2980b9;
 }
+
+.project-card {
+    animation: fadeInUp 0.8s ease-in-out;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 -------------------------------------------------------------------------
 /* Connect with Me Section */
@@ -210,7 +225,7 @@ img {
    background-color: #E1306C;
 }
 
------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
 
 .certification-card {
    display: flex;
@@ -231,7 +246,7 @@ img {
    font-weight: bold;
 }
 
---------------------------------------------------
+-----------------------------------------------------------------------------------------
 /* Certifications Section */
 #certifications {
     margin: 40px auto;
@@ -282,7 +297,7 @@ ul {
     transform: scale(1.05);
     transition: transform 0.3s;
 }
--------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 .profile-pic {
     width: 50px;
     height: 50px;
@@ -335,7 +350,7 @@ ul li {
 
 li {
     font-size: 16px; /* Adjust bullet point font size */
-----------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
 footer { 
     display: flex;
     justify-content: space-between; /* Horizontally center the content */
@@ -350,7 +365,7 @@ footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000; /* Make sure the footer stays on top */
 }
-------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
 /* Dark Mode Styles */
 body.dark-mode {
     background-color: #1e1e1e; /* Darker background for dark mode */
@@ -414,7 +429,7 @@ textarea.form-control {
     transform: translateY(-3px); /* Subtle lift effect */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
-------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
 #resume {
     text-align: center;
     padding: 20px;
@@ -448,8 +463,89 @@ button:hover, a:hover {
     color: #fff;
 }
 
+------------------------------------------------------------------------------------------------------
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0;
+}
+#back-to-top.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
--------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+
+header a.active {
+    border-bottom: 2px solid var(--link-hover-color);
+}
+
+---------------------------------------------------------------------------------------------------
+.skill-bar {
+    position: relative;
+    height: 25px;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #3498db;
+    width: 0;
+    border-radius: 12px;
+    transition: width 1.5s ease-in-out;
+}
+
+---------------------------------------------------------------------------------------------------
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: var(--header-bg-color);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out;
+}
+
+-----------------------------------------------------------------------------------------------
+
+.testimonial-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 10px;
+}
+
+---------------------------------------------------------------------------------------------------
+
 :root {
     --primary-bg-color: #f0f0f0;
     --primary-text-color: #333;
