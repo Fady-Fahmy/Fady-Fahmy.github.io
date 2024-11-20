@@ -435,7 +435,7 @@ textarea.form-control {
     padding: 20px;
 }
 
-.resume-button { 
+.resume-button {
     display: inline-block;
     padding: 12px 24px;
     background-color: #6c757d; /* Keep the professional gray */
@@ -454,14 +454,16 @@ textarea.form-control {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
-button, a {
+/* Remove or modify the global button and link hover effect to prevent conflicts */
+.other-button, .other-link {
     transition: all 0.3s ease;
 }
 
-button:hover, a:hover {
+.other-button:hover, .other-link:hover {
     background-color: #333;
     color: #fff;
 }
+
 
 ---------------------------------------------------------------------------------------------------
 
