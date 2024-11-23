@@ -433,7 +433,6 @@ textarea.form-control {
 #resume {
     text-align: center;
     padding: 20px;
-}
 
 /* Add .btn-59 styles as provided */
 .btn-59,
@@ -449,9 +448,8 @@ textarea.form-control {
 .btn-59 {
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
-  background-color: #000;
-  background-image: none;
-  color: #fff;
+  background-color: #000; /* Ensure background is black */
+  color: #fff; /* Ensure text is white for contrast */
   cursor: pointer;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
@@ -459,39 +457,35 @@ textarea.form-control {
   font-size: 100%;
   line-height: 1.5;
   margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-  padding: 0;
+  padding: 1.5rem 4rem; /* Proper padding */
+  display: inline-block; /* Ensure display is inline-block */
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 20px; /* Align with padding style */
+  text-align: center; /* Center-align for consistency */
+  position: relative; /* Position set for containing the absolute child span */
 }
+
 .btn-59:disabled {
   cursor: default;
 }
+
 .btn-59:-moz-focusring {
   outline: auto;
 }
+
 .btn-59 svg {
   display: block;
   vertical-align: middle;
 }
+
 .btn-59 [hidden] {
   display: none;
 }
-.btn-59 {
-  background: none;
-  box-sizing: border-box;
-  color: #000;
-  display: inline-block;
-  visibility: visible;
-  font-weight: 900;
-  -webkit-mask-image: none;
-  padding: 1.5rem 4rem;
-  position: static;
-  text-transform: uppercase;
-  margin-top: 20px; /* Align with padding style */
-  text-align: center; /* Center-align for consistency */
-}
+
 .btn-59 span {
-  background: #fff;
-  border: 2px solid fff;
+  background: #fff; /* White background for span */
+  border: 2px solid #fff; /* Corrected border color */
   border-radius: 999px;
   display: grid;
   inset: 0;
@@ -499,10 +493,12 @@ textarea.form-control {
   pointer-events: none;
   position: absolute;
 }
+
 .btn-59:hover span {
   -webkit-animation: tada 0.8s;
   animation: tada 0.8s;
 }
+
 @-webkit-keyframes tada {
   0% {
     transform: scaleX(1);
@@ -526,6 +522,7 @@ textarea.form-control {
     transform: scaleX(1);
   }
 }
+
 @keyframes tada {
   0% {
     transform: scaleX(1);
