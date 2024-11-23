@@ -433,7 +433,6 @@ textarea.form-control {
 #resume {
     text-align: center;
     padding: 20px;
-
 /* Add .btn-59 styles as provided */
 .btn-59,
 .btn-59 *,
@@ -448,8 +447,8 @@ textarea.form-control {
 .btn-59 {
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
-  background-color: #000; /* Ensure background is black */
-  color: #fff; /* Ensure text is white for contrast */
+  background-color: #000; /* Black background to contrast with white page */
+  color: #fff; /* White text for contrast */
   cursor: pointer;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
@@ -464,6 +463,7 @@ textarea.form-control {
   margin-top: 20px; /* Align with padding style */
   text-align: center; /* Center-align for consistency */
   position: relative; /* Position set for containing the absolute child span */
+  border-radius: 50px; /* Rounded corners for modern look */
 }
 
 .btn-59:disabled {
@@ -484,8 +484,9 @@ textarea.form-control {
 }
 
 .btn-59 span {
-  background: #fff; /* White background for span */
-  border: 2px solid #fff; /* Corrected border color */
+  background: #000; /* Black background for contrast */
+  color: #fff; /* White text for the span to ensure visibility */
+  border: 2px solid #000; /* Black border for better contrast */
   border-radius: 999px;
   display: grid;
   inset: 0;
