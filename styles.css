@@ -435,26 +435,6 @@ textarea.form-control {
     padding: 20px;
 }
 
-/* Modern Resume Button Styles */
-.resume-button {
-    display: inline-block;
-    padding: 14px 28px;
-    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Modern gradient effect */
-    color: white;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 50px; /* Fully rounded for a modern look */
-    transition: background 0.3s, transform 0.3s ease-in-out, box-shadow 0.3s;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for a floating effect */
-}
-
-.resume-button:hover {
-    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
-    transform: translateY(-4px); /* Lift effect for interactivity */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
-}
---------------------------------------------------------------------------------------
 .btn-59,
 .btn-59 *,
 .btn-59 :after,
