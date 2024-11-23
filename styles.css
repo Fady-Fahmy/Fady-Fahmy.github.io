@@ -435,6 +435,7 @@ textarea.form-control {
     padding: 20px;
 }
 
+/* Add .btn-59 styles as provided */
 .btn-59,
 .btn-59 *,
 .btn-59 :after,
@@ -444,6 +445,7 @@ textarea.form-control {
   border: 0 solid;
   box-sizing: border-box;
 }
+
 .btn-59 {
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
@@ -477,12 +479,14 @@ textarea.form-control {
   background: none;
   box-sizing: border-box;
   color: #000;
-  display: block;
+  display: inline-block;
   font-weight: 900;
   -webkit-mask-image: none;
   padding: 1.5rem 4rem;
   position: relative;
   text-transform: uppercase;
+  margin-top: 20px; /* Align with padding style */
+  text-align: center; /* Center-align for consistency */
 }
 .btn-59 span {
   background: #fff;
@@ -544,6 +548,7 @@ textarea.form-control {
     transform: scaleX(1);
   }
 }
+
 
 ---------------------------------------------------------------------------------------------------
 
