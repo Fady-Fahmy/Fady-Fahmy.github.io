@@ -107,7 +107,6 @@ html {
     margin-top: 0; /* Remove extra space between header and content */
     padding-top: 0; /* Remove padding if there is any */
 }
-}
 
 img {
     max-width: 100%; /* Ensures images do not overflow */
@@ -463,9 +462,6 @@ textarea.form-control {
 .btn:hover {
   background-color: RoyalBlue;
 }
-
-
-
 --------------------------------------------------------------------------------------------------------
 
 
