@@ -446,23 +446,29 @@ textarea.form-control {
   color: #333;
 }
 
-/* Style buttons */
-.btn {
-  background-color: DodgerBlue;
-  border: none;
+.btn-59 {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: 600;
   color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 20px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
   border-radius: 8px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: dimgray;
+.btn-59:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+  transform: scale(1.05);
 }
+
+/* Reset styles for safety */
+.btn-59,
+.btn-59 * {
+  box-sizing: border-box;
+}
+
 
 --------------------------------------------------------------------------------------------------------
 
