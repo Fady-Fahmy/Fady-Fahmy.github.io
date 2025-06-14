@@ -90,44 +90,6 @@ nav ul li a:hover {
     opacity: 0.8; /* Slightly decrease opacity for hover effect */
 }
 
--------------------------------------------------------------------------------------
-#hero {
-  background-color: #f4f6f8;
-  padding: 100px 20px 60px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.hero-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.hero-content h1 {
-  font-size: 32px;
-  color: #2c3e50;
-}
-
-.hero-content .highlight {
-  color: #0077B5;
-}
-
-.tagline {
-  font-size: 20px;
-  margin-top: 10px;
-  color: #444;
-}
-
-.slider-text {
-  font-size: 18px;
-  color: #888;
-  margin-top: 10px;
-  height: 24px;
-}
-
 -------------------------------------------------------------------------------------------
 html {
     scroll-padding-top: 100px; /* Adjust this value based on your header height */
