@@ -90,6 +90,43 @@ nav ul li a:hover {
     opacity: 0.8; /* Slightly decrease opacity for hover effect */
 }
 
+-------------------------------------------------------------------------------------
+#hero {
+  background-color: #f4f6f8;
+  padding: 100px 20px 60px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.hero-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  color: #2c3e50;
+}
+
+.hero-content .highlight {
+  color: #0077B5;
+}
+
+.tagline {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #444;
+}
+
+.slider-text {
+  font-size: 18px;
+  color: #888;
+  margin-top: 10px;
+  height: 24px;
+}
 
 -------------------------------------------------------------------------------------------
 html {
@@ -431,18 +468,46 @@ textarea.form-control {
 }
 --------------------------------------------------------------------------------------------------------
 #resume {
-    text-align: center;
-    padding: 20px;
-/* Add .btn-59 styles as provided */
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+#resume h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#resume p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.btn-59 {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-59:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+  transform: scale(1.05);
+}
+
+/* Reset styles for safety */
 .btn-59,
-.btn-59 *,
-.btn-59 :after,
-.btn-59 :before,
-.btn-59:after,
-.btn-59:before {
-  border: 0 solid;
+.btn-59 * {
   box-sizing: border-box;
 }
+--------------------------------------------------------------------------------------------------------
+
 
 .btn-59 {
   -webkit-tap-highlight-color: transparent;
