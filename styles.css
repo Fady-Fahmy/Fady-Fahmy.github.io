@@ -409,23 +409,6 @@ label {
 textarea.form-control {
   height: 150px;
 }
-
-
-.btn {
-    padding: 12px 24px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 25px; /* Rounded buttons for a modern look */
-    cursor: pointer;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-}
-
-.btn:hover {
-    background-color: #2980b9;
-    transform: translateY(-3px); /* Subtle lift effect */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
 --------------------------------------------------------------------------------------------------------
 #resume {
