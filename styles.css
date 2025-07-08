@@ -223,6 +223,54 @@ img {
    background-color: #E1306C;
 }
 
+-------------------------------------------------------------------------------------------
+.contact-form {
+  margin-top: 30px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(0.5); /* better visibility on light backgrounds */
+}
+
 ----------------------------------------------------------------------------------------------------------
 
 .certification-card {
