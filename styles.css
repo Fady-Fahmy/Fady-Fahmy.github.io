@@ -223,52 +223,79 @@ img {
    background-color: #E1306C;
 }
 
--------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+/* Container styling */
 .contact-form {
-  margin-top: 30px;
-  max-width: 500px;
+  margin-top: 40px;
+  max-width: 600px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Input and textarea styling */
 .contact-form input,
 .contact-form textarea {
-  padding: 12px 15px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  padding: 15px 18px;
+  border: none;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.85);
   font-size: 16px;
-  font-family: inherit;
-  width: 100%;
-  box-sizing: border-box;
-  transition: border 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #007bff;
-  outline: none;
+  background-color: #fff;
+  outline: 2px solid #0d99ff;
+  box-shadow: 0 0 10px rgba(13, 153, 255, 0.3);
 }
 
+/* Send button */
 .contact-form button {
-  background-color: #007bff;
+  background: linear-gradient(to right, #0d99ff, #00c9a7);
   color: white;
   border: none;
-  padding: 12px 15px;
+  padding: 14px 20px;
   font-size: 16px;
-  border-radius: 10px;
+  border-radius: 14px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .contact-form button:hover {
-  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 201, 167, 0.3);
 }
 
+/* Social icon tweaks */
 .social-icon {
-  width: 24px;
-  height: 24px;
-  filter: invert(0.5); /* better visibility on light backgrounds */
+  width: 28px;
+  height: 28px;
+  filter: invert(50%) drop-shadow(1px 1px 1px rgba(0,0,0,0.3));
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
 }
 
 ----------------------------------------------------------------------------------------------------------
