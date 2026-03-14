@@ -1,0 +1,33 @@
+  <section id="projects" class="section-offset">
+        <h2>👨‍💻Projects:</h2>
+        <ul>
+                    <ul class="project-list">
+                    <li><a href="https://github.com/Fady-Fahmy/Active-Directory-Linux-Home-lab.git" class="project-link"> Active Directory & Linux Home Lab</a></li>
+                    </ul>
+
+                    <ul class="project-list">
+                    <li><a href="https://github.com/Fady-Fahmy/Honeypot" class="project-link"> Creating a T-Honeypot </a></li>
+                    </ul>
+
+                    <ul class="project-list">
+                    <li><a href="https://github.com/Fady-Fahmy/snort" class="project-link"> Deploying Snort </a></li>
+                    </ul>
+
+                    <ul class="project-list">
+                    <li><a href="https://replit.com/@maxclere13/RSAPROJECTCRYPTO-2?v=1" class="project-link"> RSA Encryption And Decryption</a></li>
+                    </ul>
+
+                    <ul class="project-list">
+                    <li><a href="https://Fady-Fahmy.github.io/PWC.png" class="project-link"> Forage - Pwc Cybersecurity Job simulationn</a></li>
+                    </ul>
+
+                    <ul class="project-list">
+                    <li><a href="https://Fady-Fahmy.github.io/MASTERCARD.png" class="project-link"> Forage - MasterCard Cybersecurity Job simulation</a></li>
+                    </ul>
+
+                    <ul class="project-list">
+                    <li><a href="https://github.com/Fady-Fahmy/Letter-Frequency-Decryption-.git" class="project-link"> Letter Frequency Decryption</a></li>
+                    </ul>  
+            </li>
+        </ul>
+    </section>
