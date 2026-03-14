@@ -197,15 +197,18 @@ nav ul li a:hover {
   font-size: 14px;
   font-weight: 500;
   padding: 11px 24px;
-  background: transparent;
-  color: var(--text);
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  background: rgba(96, 165, 250, 0.15);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
   text-decoration: none;
-  transition: border-color 0.15s, color 0.15s;
+  transition: background 0.15s;
 }
 
-.btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+.btn-secondary:hover {
+  background: rgba(96, 165, 250, 0.25);
+  color: var(--accent);
+}
 
 .hero-photo img {
   width: 220px;
@@ -531,55 +534,6 @@ nav ul li a:hover {
   line-height: 1.4;
 }
 
-/* ================================================
-   CONNECT
-   ================================================ */
-.connect-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.connect-link {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 14px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  text-decoration: none;
-  transition: border-color 0.15s, background 0.15s;
-}
-
-.connect-link:hover {
-  border-color: var(--accent);
-  background: var(--accent-bg);
-}
-
-.connect-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.connect-icon img {
-  width: 18px;
-  height: 18px;
-  filter: brightness(0) invert(1);
-  display: block;
-  margin: 0;
-}
-
-.connect-icon.gh  { background: #24292e; }
-.connect-icon.li  { background: #0077b5; }
-
-.connect-info { display: flex; flex-direction: column; line-height: 1.3; }
-.connect-platform { font-size: 13px; font-weight: 600; color: var(--text-dark); }
-.connect-handle   { font-size: 12px; color: var(--text-light); }
 
 /* ================================================
    FOOTER
