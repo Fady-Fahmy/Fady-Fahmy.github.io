@@ -169,7 +169,20 @@ img {
     }
 }
 
+------------------------------------------------------------------------
+#education .education-entry ul,
+#education .education-entry li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 40px;
+  list-style: disc;
+  padding-left: 20px;
+}
 
+#education .education-entry li {
+  display: list-item;
+  margin: 4px 0;
+}
 -------------------------------------------------------------------------
 /* Connect with Me Section */
 #connect h2 {
