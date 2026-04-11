@@ -23,21 +23,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-    const text = "Who Am I ?";
-    const target = document.getElementById("typing-text");
-    let index = 0;
-
-    function type() {
-        if (!target) return;
-
-        if (index < text.length) {
-            target.textContent += text[index];
-            index++;
-            setTimeout(type, 120);
-        }
-    }
-
-    type();
-});
