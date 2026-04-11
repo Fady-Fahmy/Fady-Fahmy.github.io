@@ -24,19 +24,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-const text = "Who Am I ?";
-const target = document.getElementById("typing-text");
-let index = 0;
+document.addEventListener("DOMContentLoaded", function () {
+    const text = "Who Am I ?";
+    const target = document.getElementById("typing-text");
+    let index = 0;
 
-function type() {
-    // Fix 3: Guard against missing element
-    if (!target) return;
+    function type() {
+        if (!target) return;
 
-    if (index < text.length) {
-        target.textContent += text[index];
-        index++;
-        setTimeout(type, 120);
+        if (index < text.length) {
+            target.textContent += text[index];
+            index++;
+            setTimeout(type, 120);
+        }
     }
-}
 
-type();
+    type();
+});
