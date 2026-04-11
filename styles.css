@@ -113,6 +113,24 @@ nav ul li a:hover {
   background: var(--accent-bg);
 }
 
+.who-label {
+  color: #00bcd4; /* match your current teal color */
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+  color: #00bcd4;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 /* ================================================
    HERO
    ================================================ */
