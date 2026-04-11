@@ -16,3 +16,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         this.classList.add('active');
     });
 });
+
+const text = "Who Am I ?";
+const target = document.getElementById("typing-text");
+let index = 0;
+
+function type() {
+  if (index < text.length) {
+    target.textContent += text[index];
+    index++;
+    setTimeout(type, 120); // adjust speed here — lower = faster
+  }
+}
+
+type();
