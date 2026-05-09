@@ -73,6 +73,16 @@ header {
   border: 2px solid var(--border);
 }
 
+.profile-photo {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
 .logo-text {
   display: flex;
   flex-direction: column;
@@ -543,7 +553,26 @@ nav ul li a:hover {
   line-height: 1.4;
 }
 
+.cert-item.in-progress {
+  opacity: 0.75;
+  pointer-events: none;
+  cursor: default;
+}
 
+.cert-tag {
+  display: inline-block;
+  font-style: normal;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin-left: 6px;
+  vertical-align: middle;
+  letter-spacing: 0.03em;
+}
 /* ================================================
    FOOTER
    ================================================ */
