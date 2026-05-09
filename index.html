@@ -34,6 +34,7 @@
     <nav>
       <ul>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -59,12 +60,13 @@
 <div class="hero">
   <div class="hero-inner">
     <div>
-      <p class="hero-eyebrow">About me :</p>
+      <span class="open-to-work"><span class="otw-dot"></span>Open to Work</span>
+      <p class="hero-eyebrow">About Me</p>
       <h1>Fady Fahmy</h1>
+      <p class="hero-tagline"><span class="hero-typing"></span><span class="typing-cursor" aria-hidden="true">|</span></p>
       <div class="hero-bio">
-        <p>IT professional with experience across financial services and nonprofit environments, specializing in Identity &amp; Access Management, Endpoint &amp; Device Management, security, and cloud operations.</p>
-        <p>I've supported global user bases spanning the Americas, EMEA, and APAC — from trading floor staff to C-suite executives — delivering hands-on L1 &amp; L2 support, managing full identity life cycle, creating knowledge bases, and keeping things running in high-pressure environments.</p>
-        <p>Currently deepening my expertise in cloud technologies and cybersecurity, with a focus on Azure, IAM, security engineering, and automation.</p>
+        <p>IT Consultant with 2 years across financial services and nonprofit environments, keeping global infrastructure running for 900+ users — from trading floors to C-suite executives.</p>
+        <p>Currently going deeper into Azure, IAM security engineering, and automation while holding Active Directory, Intune, Okta, and M365 environments end-to-end.</p>
       </div>
       <div class="hero-meta">
         <span class="meta-item">
@@ -103,7 +105,7 @@
   <div class="stats-inner">
     <div class="stat">
       <div class="stat-number">2</div>
-      <div class="stat-label">Years of experience</div>
+      <div class="stat-label">Years of Experience</div>
     </div>
     <div class="stat">
       <div class="stat-number">900+</div>
@@ -120,106 +122,236 @@
   </div>
 </div>
 
+<!-- KEY HIGHLIGHTS -->
+<section class="wins-bar">
+  <div class="wins-inner">
+    <p class="wins-label">Key Highlights</p>
+    <div class="wins-grid">
+      <div class="win-card fade-in">
+        <div class="win-icon">
+          <svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="win-body">
+          <p class="win-title">Zero-Day Response</p>
+          <p class="win-desc">Patch tested and deployed security updates to 500+ endpoints company-wide within 24 hours</p>
+        </div>
+      </div>
+      <div class="win-card fade-in">
+        <div class="win-icon">
+          <svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div class="win-body">
+          <p class="win-title">IAM at Scale</p>
+          <p class="win-desc">Managed full identity lifecycle for 900+ users across global Americas, EMEA, and APAC regions</p>
+        </div>
+      </div>
+      <div class="win-card fade-in">
+        <div class="win-icon">
+          <svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div class="win-body">
+          <p class="win-title">Security Awareness</p>
+          <p class="win-desc">Designed and ran phishing simulation campaigns that measurably strengthened org-wide defenses</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- MAIN CONTENT -->
 <div class="content-wrap">
 
-  <!-- ── MAIN COLUMN ── -->
+  <!-- MAIN COLUMN -->
   <div class="main-col">
 
     <!-- EXPERIENCE -->
-    <div class="card" id="experience">
+    <div class="card fade-in" id="experience">
       <div class="card-header">
         <h2 class="card-title">Work Experience</h2>
       </div>
       <div class="card-body">
+        <div class="exp-timeline">
 
-        <div class="exp-entry">
-          <div class="exp-top">
-            <div class="exp-logo-row">
-              <img src="gotham-logo.png" alt="Gotham Technology Group" class="company-logo" loading="lazy">
-              <span class="exp-role">IT Consultant</span>
-              <span class="exp-period">Aug 2025 – Present</span>
+          <div class="exp-entry">
+            <div class="exp-top">
+              <div class="exp-logo-row">
+                <img src="gotham-logo.png" alt="Gotham Technology Group" class="company-logo" loading="lazy">
+                <span class="exp-role">IT Consultant</span>
+                <span class="exp-period">Aug 2025 – Present</span>
+              </div>
+            </div>
+            <p class="exp-company">Gotham Technology Group — Manhattan, NYC</p>
+            <ul class="exp-list">
+              <li>Administer Active Directory Domain Services (AD DS) and Intune MDM for a global financial services firm across the Americas, EMEA, and APAC, managing OUs, security groups, application groups, distribution lists, GPOs, and storage access provisioning.</li>
+              <li>Oversee Microsoft 365 and Entra ID environments, managing Exchange Online, user licensing, mailbox configurations, conditional access policies, and cloud identity operations across a global tenant.</li>
+              <li>Manage Okta IAM operations including access permissions, account lifecycle, and authenticator management; analyze activity logs to troubleshoot and resolve authentication issues.</li>
+              <li>Oversee the full identity and hardware lifecycle — provisioning, modifying, and deprovisioning user accounts, devices, and peripherals in alignment with onboarding, role changes, and departures.</li>
+              <li>Manage AI platform evaluation and deployment, overseeing licensing, SSO integration, add-in configuration, and usage monitoring across multiple vendors.</li>
+              <li>Administer virtual desktop environments, managing user sessions, optimizing resources, and resolving connectivity issues to ensure consistent and reliable access.</li>
+              <li>Support financial data terminal and portfolio reporting platforms used by traders and analysts, coordinating with vendor support for issue resolution and maintaining uninterrupted market data access.</li>
+              <li>Collaborate with security engineers to embed security controls into laptops, applications, and system designs; conduct pre-deployment testing of weekly security patches, distribute approved updates company-wide, and remediate software vulnerable to zero-day exploits.</li>
+              <li>Manage enterprise email security operations, investigating flagged emails, enforcing phishing controls, maintaining safe sender lists, whitelisting approved domains, and releasing quarantined messages to ensure reliable mail flow.</li>
+              <li>Manage Endpoint Detection and Response (EDR) operations using an enterprise platform, maintaining sensor updates, investigating alerts, and coordinating with the security team for threat remediation.</li>
+              <li>Assist in designing and managing phishing simulation campaigns to train users on identifying and reporting threats, strengthening organization-wide security awareness.</li>
+              <li>Serve as the first point of contact for white-glove L1 &amp; L2 IT support across in-office and remote users, including C-suite executives and trading floor staff, maintaining high first-contact resolution rates and minimizing downtime.</li>
+              <li>Provide hands-on support for conference room A/V environments, ensuring consistent readiness across C-suite meetings, executive presentations, training rooms, and company-wide headquarters events.</li>
+              <li>Create and maintain IT knowledge bases documenting recurring issues, runbooks, and SOPs to reduce resolution time, accelerate onboarding of incoming IT staff, and provide guidance for current users.</li>
+            </ul>
+          </div>
+
+          <div class="exp-entry">
+            <div class="exp-top">
+              <div class="exp-logo-row">
+                <img src="cji-logo.png" alt="Center for Justice Innovation" class="company-logo" loading="lazy">
+                <span class="exp-role">Technical Support Analyst</span>
+                <span class="exp-period">Nov 2024 – Mar 2025</span>
+              </div>
+            </div>
+            <p class="exp-company">Center for Justice Innovation — Manhattan, NYC</p>
+            <ul class="exp-list">
+              <li>Administered Active Directory and MDM for 900+ users across 6 locations, managing user accounts, group policies, security groups, and device compliance.</li>
+              <li>Managed IT asset lifecycle — imaging, deployment, and decommissioning — for 200+ laptops and mobile devices.</li>
+              <li>Provided Level 1 &amp; 2 helpdesk support via Jira for users onsite at headquarters, across 6 locations, and remotely, resolving hardware, software, and connectivity issues.</li>
+              <li>Deploy, configure, and decommission laptops, PCs, and mobile devices, including full workstation setup with monitors, docking stations, peripherals, and printers.</li>
+              <li>Traveled to branch offices to deploy and configure IT hardware and train staff, streamlining onboarding for new hires.</li>
+              <li>Configured and supported conference room A/V systems, and camera setups to enable reliable hybrid collaboration across teams.</li>
+            </ul>
+          </div>
+
+          <div class="exp-entry">
+            <div class="exp-top">
+              <div class="exp-logo-row">
+                <img src="moore-logo.png" alt="Moore Capital Management" class="company-logo" loading="lazy">
+                <span class="exp-role">IT Intern</span>
+                <span class="exp-period">May 2024 – Aug 2024</span>
+              </div>
+            </div>
+            <p class="exp-company">Moore Capital Management — Manhattan, NYC</p>
+            <ul class="exp-list">
+              <li>Provided Level 1 support to the trading floor, minimizing downtime during peak market hours.</li>
+              <li>Collaborated with the Senior Security Engineer to implement DLP USB device control solutions, integrating user lifecycle processes with endpoint security measures to protect sensitive trading floor data.</li>
+              <li>Built and deployed 100+ user workstations with full desk setups, including monitors, docking stations, and desktop VoIP phones.</li>
+              <li>Resolved end user issues via the ticketing system, delivering timely technical support to 300+ employees.</li>
+              <li>Configured and maintained Zoom conference rooms enterprise-wide, including Logitech camera setup and integration.</li>
+              <li>Developed a comprehensive company-wide application inventory, driving timely updates, batch processing, and decommissioning of obsolete applications.</li>
+            </ul>
+          </div>
+
+          <div class="exp-entry">
+            <div class="exp-top">
+              <div class="exp-logo-row">
+                <img src="nypd-logo.png" alt="NYPD" class="company-logo" loading="lazy">
+                <span class="exp-role">Police Cadet Intern</span>
+                <span class="exp-period">Jun 2023 – Apr 2025</span>
+              </div>
+            </div>
+            <p class="exp-company">NYPD — Manhattan, NYC</p>
+            <ul class="exp-list">
+              <li>Operated NYPD software systems to gather, process, and share information daily.</li>
+              <li>Assisted officers with arrest processing documents and accurate reports for criminal cases.</li>
+              <li>Completed training on the NYC criminal justice system, legal procedures, and operations.</li>
+              <li>Certified in First Aid, CPR, and AED.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="card fade-in" id="projects">
+      <div class="card-header">
+        <h2 class="card-title">Projects</h2>
+      </div>
+      <div class="card-body">
+        <div class="project-grid">
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-header-left">
+                <div class="project-icon">
+                  <svg width="18" height="18" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </div>
+                <div>
+                  <h3 class="project-name">AD &amp; Linux Home Lab</h3>
+                  <span class="project-status active">Active</span>
+                </div>
+              </div>
+              <a href="https://github.com/Fady-Fahmy/Active-Directory-Linux-Home-lab" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                GitHub
+              </a>
+            </div>
+            <p class="project-desc">Simulated enterprise network on a personal laptop — Windows Server 2017 domain controller with Active Directory DS, Group Policy, and DNS, joined by Windows 10 and Linux clients. Integrated Okta with MFA for centralized identity management and used Kali Linux for security testing across VirtualBox and VMware VMs.</p>
+            <div class="project-tags">
+              <span class="skill-tag">Active Directory</span>
+              <span class="skill-tag">Windows Server</span>
+              <span class="skill-tag">Okta</span>
+              <span class="skill-tag">Kali Linux</span>
+              <span class="skill-tag">Group Policy</span>
+              <span class="skill-tag">VirtualBox</span>
+              <span class="skill-tag">VMware</span>
+              <span class="skill-tag">MFA</span>
             </div>
           </div>
-          <p class="exp-company">Gotham Technology Group — Manhattan, NYC</p>
-          <ul class="exp-list">
-            <li>Administer Active Directory Domain Services (AD DS) and Intune MDM for a global financial services firm across the Americas, EMEA, and APAC, managing OUs, security groups, application groups, distribution lists, GPOs, and storage access provisioning.</li>
-            <li>Oversee Microsoft 365 and Entra ID environments, managing Exchange Online, user licensing, mailbox configurations, conditional access policies, and cloud identity operations across a global tenant.</li>
-            <li>Manage Okta IAM operations including access permissions, account lifecycle, and authenticator management; analyze activity logs to troubleshoot and resolve authentication issues.</li>
-            <li>Oversee the full identity and hardware lifecycle — provisioning, modifying, and deprovisioning user accounts, devices, and peripherals in alignment with onboarding, role changes, and departures.</li>
-            <li>Manage AI platform evaluation and deployment, overseeing licensing, SSO integration, add-in configuration, and usage monitoring across multiple vendors.</li>
-            <li>Administer virtual desktop environments, managing user sessions, optimizing resources, and resolving connectivity issues to ensure consistent and reliable access.</li>
-            <li>Support financial data terminal and portfolio reporting platforms used by traders and analysts, coordinating with vendor support for issue resolution and maintaining uninterrupted market data access.</li>
-            <li>Collaborate with security engineers to embed security controls into laptops, applications, and system designs; conduct pre-deployment testing of weekly security patches, distribute approved updates company-wide, and remediate software vulnerable to zero-day exploits.</li>
-            <li>Manage enterprise email security operations, investigating flagged emails, enforcing phishing controls, maintaining safe sender lists, whitelisting approved domains, and releasing quarantined messages to ensure reliable mail flow.</li>
-            <li>Manage Endpoint Detection and Response (EDR) operations using an enterprise platform, maintaining sensor updates, investigating alerts, and coordinating with the security team for threat remediation.</li>
-            <li>Assist in designing and managing phishing simulation campaigns to train users on identifying and reporting threats, strengthening organization-wide security awareness.</li>
-            <li>Serve as the first point of contact for white-glove L1 &amp; L2 IT support across in-office and remote users, including C-suite executives and trading floor staff, maintaining high first-contact resolution rates and minimizing downtime.</li>
-            <li>Provide hands-on support for conference room A/V environments, ensuring consistent readiness across C-suite meetings, executive presentations, training rooms, and company-wide headquarters events.</li>
-            <li>Create and maintain IT knowledge bases documenting recurring issues, runbooks, and SOPs to reduce resolution time, accelerate onboarding of incoming IT staff, and provide guidance for current users.</li>
-          </ul>
-        </div>
 
-        <div class="exp-entry">
-          <div class="exp-top">
-            <div class="exp-logo-row">
-              <img src="cji-logo.png" alt="Center for Justice Innovation" class="company-logo" loading="lazy">
-              <span class="exp-role">Technical Support Analyst</span>
-              <span class="exp-period">Nov 2024 – Mar 2025</span>
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-header-left">
+                <div class="project-icon">
+                  <svg width="18" height="18" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <div>
+                  <h3 class="project-name">Letter Frequency Decryption</h3>
+                  <span class="project-status active">Active</span>
+                </div>
+              </div>
+              <a href="https://github.com/Fady-Fahmy/Letter-Frequency-Decryption-" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                GitHub
+              </a>
+            </div>
+            <p class="project-desc">Python tool that cracks substitution ciphers using letter frequency analysis. Computes the relative frequency of each letter in ciphertext and maps them to standard English distributions to reveal plaintext — a practical application of the cryptanalysis techniques from my coursework.</p>
+            <div class="project-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Cryptanalysis</span>
+              <span class="skill-tag">Frequency Analysis</span>
+              <span class="skill-tag">Cipher Decryption</span>
             </div>
           </div>
-          <p class="exp-company">Center for Justice Innovation — Manhattan, NYC</p>
-          <ul class="exp-list">
-            <li>Administered Active Directory and MDM for 900+ users across 6 locations, managing user accounts, group policies, security groups, and device compliance.</li>
-            <li>Managed IT asset lifecycle — imaging, deployment, and decommissioning — for 200+ laptops and mobile devices.</li>
-            <li>Provided Level 1 &amp; 2 helpdesk support via Jira for users onsite at headquarters, across 6 locations, and remotely, resolving hardware, software, and connectivity issues.</li>
-            <li>Deploy, configure, and decommission laptops, PCs, and mobile devices, including full workstation setup with monitors, docking stations, peripherals, and printers.</li>
-            <li>Traveled to branch offices to deploy and configure IT hardware and train staff, streamlining onboarding for new hires.</li>
-            <li>Configured and supported conference room A/V systems, and camera setups to enable reliable hybrid collaboration across teams.</li>
-          </ul>
-        </div>
 
-        <div class="exp-entry">
-          <div class="exp-top">
-            <div class="exp-logo-row">
-              <img src="moore-logo.png" alt="Moore Capital Management" class="company-logo" loading="lazy">
-              <span class="exp-role">IT Intern</span>
-              <span class="exp-period">May 2024 – Aug 2024</span>
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-header-left">
+                <div class="project-icon">
+                  <svg width="18" height="18" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+                </div>
+                <div>
+                  <h3 class="project-name">Portfolio Website</h3>
+                  <span class="project-status active">Active</span>
+                </div>
+              </div>
+              <a href="https://github.com/Fady-Fahmy" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                GitHub
+              </a>
+            </div>
+            <p class="project-desc">This portfolio — built from scratch with HTML, CSS, and vanilla JavaScript. Includes a Content Security Policy, email obfuscation, scroll-driven fade animations, IntersectionObserver active nav tracking, a typing animation, and full accessibility improvements.</p>
+            <div class="project-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Security</span>
+              <span class="skill-tag">GitHub Pages</span>
             </div>
           </div>
-          <p class="exp-company">Moore Capital Management — Manhattan, NYC</p>
-          <ul class="exp-list">
-            <li>Provided Level 1 support to the trading floor, minimizing downtime during peak market hours.</li>
-            <li>Collaborated with the Senior Security Engineer to implement DLP USB device control solutions, integrating user lifecycle processes with endpoint security measures to protect sensitive trading floor data.</li>
-            <li>Built and deployed 100+ user workstations with full desk setups, including monitors, docking stations, and desktop VoIP phones.</li>
-            <li>Resolved end user issues via the ticketing system, delivering timely technical support to 300+ employees.</li>
-            <li>Configured and maintained Zoom conference rooms enterprise-wide, including Logitech camera setup and integration.</li>
-            <li>Developed a comprehensive company-wide application inventory, driving timely updates, batch processing, and decommissioning of obsolete applications.</li>
-          </ul>
-        </div>
 
-        <div class="exp-entry">
-          <div class="exp-top">
-            <div class="exp-logo-row">
-              <img src="nypd-logo.png" alt="NYPD" class="company-logo" loading="lazy">
-              <span class="exp-role">Police Cadet Intern</span>
-              <span class="exp-period">Jun 2023 – Apr 2025</span>
-            </div>
-          </div>
-          <p class="exp-company">NYPD — Manhattan, NYC</p>
-          <ul class="exp-list">
-            <li>Operated NYPD software systems to gather, process, and share information daily.</li>
-            <li>Assisted officers with arrest processing documents and accurate reports for criminal cases.</li>
-            <li>Completed training on the NYC criminal justice system, legal procedures, and operations.</li>
-            <li>Certified in First Aid, CPR, and AED.</li>
-          </ul>
         </div>
-
       </div>
     </div>
 
     <!-- EDUCATION -->
-    <div class="card" id="education">
+    <div class="card fade-in" id="education">
       <div class="card-header">
         <h2 class="card-title">Education</h2>
       </div>
@@ -266,71 +398,71 @@
 
   </div>
 
-  <!-- ── SIDEBAR ── -->
+  <!-- SIDEBAR -->
   <div class="side-col">
 
     <!-- SKILLS -->
-    <div class="card" id="skills">
+    <div class="card fade-in" id="skills">
       <div class="card-header">
         <h2 class="card-title">Skills</h2>
       </div>
       <div class="card-body">
         <div class="skill-group">
-          <p class="skill-group-label">Identity &amp; Access Management</p>
+          <p class="skill-group-label">Identity &amp; Access Management <span class="skill-tier expert">Expert</span></p>
           <div class="skill-tags">
             <span class="skill-tag">Okta</span><span class="skill-tag">Azure / Entra ID</span><span class="skill-tag">Active Directory</span><span class="skill-tag">Group Policy (GPO)</span><span class="skill-tag">MFA / SSO</span>
           </div>
         </div>
         <div class="skill-group">
-          <p class="skill-group-label">Endpoint &amp; Device Management</p>
+          <p class="skill-group-label">Endpoint &amp; Device Management <span class="skill-tier expert">Expert</span></p>
           <div class="skill-tags">
             <span class="skill-tag">Intune MDM</span><span class="skill-tag">IBM MaaS360</span><span class="skill-tag">Dell TechDirect</span><span class="skill-tag">IGEL UMS</span><span class="skill-tag">Citrix XenDesktop</span><span class="skill-tag">TeamViewer</span>
           </div>
         </div>
         <div class="skill-group">
-          <p class="skill-group-label">Cloud &amp; Infrastructure</p>
+          <p class="skill-group-label">Cloud &amp; Infrastructure <span class="skill-tier proficient">Proficient</span></p>
           <div class="skill-tags">
             <span class="skill-tag">Azure</span><span class="skill-tag">Microsoft 365</span><span class="skill-tag">Microsoft Exchange</span><span class="skill-tag">365 Apps Admin</span><span class="skill-tag">SharePoint</span><span class="skill-tag">Egnyte</span><span class="skill-tag">OneDrive</span><span class="skill-tag">Office 365</span><span class="skill-tag">Google Workspace</span><span class="skill-tag">Exclaimer Signature</span><span class="skill-tag">Patch My PC</span>
           </div>
         </div>
         <div class="skill-group">
-          <p class="skill-group-label">Security Tools &amp; Platforms</p>
+          <p class="skill-group-label">Security Tools &amp; Platforms <span class="skill-tier proficient">Proficient</span></p>
           <div class="skill-tags">
             <span class="skill-tag">Microsoft Defender</span><span class="skill-tag">Darktrace</span><span class="skill-tag">Abnormal AI</span><span class="skill-tag">KnowBe4</span><span class="skill-tag">CrowdStrike Falcon</span><span class="skill-tag">Tenable Nessus</span>
           </div>
         </div>
         <div class="skill-group">
-          <p class="skill-group-label">Security Operations</p>
+          <p class="skill-group-label">Security Operations <span class="skill-tier proficient">Proficient</span></p>
           <div class="skill-tags">
             <span class="skill-tag">Log Analysis</span><span class="skill-tag">Threat Detection</span><span class="skill-tag">Phishing Simulation</span><span class="skill-tag">Vulnerability Scanning</span><span class="skill-tag">Email Security Administration</span><span class="skill-tag">Patch Management</span>
           </div>
         </div>
         <div class="skill-group">
-          <p class="skill-group-label">Ticketing &amp; ITSM</p>
+          <p class="skill-group-label">Ticketing &amp; ITSM <span class="skill-tier proficient">Proficient</span></p>
           <div class="skill-tags">
             <span class="skill-tag">Jira</span><span class="skill-tag">Outlook</span><span class="skill-tag">Teams</span><span class="skill-tag">Slack</span><span class="skill-tag">IT Service Management</span>
           </div>
         </div>
         <div class="skill-group">
-          <p class="skill-group-label">Scripting &amp; Automation &amp; Coding</p>
+          <p class="skill-group-label">Scripting &amp; Automation <span class="skill-tier familiar">Familiar</span></p>
           <div class="skill-tags">
             <span class="skill-tag">PowerShell</span><span class="skill-tag">Python</span><span class="skill-tag">Bash</span><span class="skill-tag">SQL</span><span class="skill-tag">Git</span><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span>
           </div>
         </div>
         <div class="skill-group">
-          <p class="skill-group-label">A/V &amp; Conferencing</p>
+          <p class="skill-group-label">A/V &amp; Conferencing <span class="skill-tier proficient">Proficient</span></p>
           <div class="skill-tags">
             <span class="skill-tag">Zoom</span><span class="skill-tag">Poly</span><span class="skill-tag">Logitech</span>
           </div>
         </div>
         <div class="skill-group">
-          <p class="skill-group-label">Password Managers</p>
+          <p class="skill-group-label">Password Managers <span class="skill-tier proficient">Proficient</span></p>
           <div class="skill-tags">
             <span class="skill-tag">1Password</span><span class="skill-tag">LastPass</span><span class="skill-tag">Google Password Manager</span>
           </div>
         </div>
         <div class="skill-group">
-          <p class="skill-group-label">Operating Systems</p>
+          <p class="skill-group-label">Operating Systems <span class="skill-tier proficient">Proficient</span></p>
           <div class="skill-tags">
             <span class="skill-tag">Windows 10/11 Enterprise</span><span class="skill-tag">Windows Server</span><span class="skill-tag">Linux — Kali</span><span class="skill-tag">Linux — Ubuntu</span><span class="skill-tag">Android</span><span class="skill-tag">Chrome OS</span>
           </div>
@@ -339,7 +471,7 @@
     </div>
 
     <!-- CERTIFICATIONS -->
-    <div class="card" id="certifications">
+    <div class="card fade-in" id="certifications">
       <div class="card-header">
         <h2 class="card-title">Certifications</h2>
       </div>
@@ -454,8 +586,14 @@
 
 </main>
 
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
 <footer>
-  <p>© 2026 Fady Fahmy. All rights reserved. Unauthorized reproduction or use of any content on this site is strictly prohibited.</p>
+  <p>Based in NYC &nbsp;·&nbsp; Available for full-time roles &nbsp;·&nbsp; Usually responds within 24h</p>
+  <p class="footer-note">© 2026 Fady Fahmy. All rights reserved.</p>
 </footer>
 
 <script src="script.js" defer></script>
