@@ -5,7 +5,7 @@ document.querySelectorAll('[data-email]').forEach(el => {
 const header = document.querySelector('header');
 const navLinks = document.querySelectorAll('nav ul li a');
 
-// Smooth scroll with dynamic header offset instead of hardcoded 100px
+// Smooth scroll with dynamic header offset
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const targetId = this.getAttribute('href').substring(1);
@@ -18,10 +18,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Active nav state driven by scroll, not just click
-const sections = document.querySelectorAll('#experience, #education, #certifications, #skills');
+// Active nav state driven by scroll
+const sections = document.querySelectorAll('#experience, #projects, #education, #certifications, #skills');
 
-const observer = new IntersectionObserver(entries => {
+const navObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       navLinks.forEach(link => link.classList.remove('active'));
@@ -34,4 +34,64 @@ const observer = new IntersectionObserver(entries => {
   threshold: 0
 });
 
-sections.forEach(section => observer.observe(section));
+sections.forEach(section => navObserver.observe(section));
+
+// Scroll fade-in for cards and sections
+const fadeObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      fadeObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+
+// Typing animation
+const typingEl = document.querySelector('.hero-typing');
+const phrases = ['IAM & Identity Specialist', 'Endpoint Security Engineer', 'Cloud Operations Consultant'];
+let phraseIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+function typeLoop() {
+  const current = phrases[phraseIndex];
+  if (deleting) {
+    charIndex--;
+    typingEl.textContent = current.slice(0, charIndex);
+    if (charIndex === 0) {
+      deleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      setTimeout(typeLoop, 500);
+      return;
+    }
+    setTimeout(typeLoop, 40);
+  } else {
+    charIndex++;
+    typingEl.textContent = current.slice(0, charIndex);
+    if (charIndex === current.length) {
+      deleting = true;
+      setTimeout(typeLoop, 1800);
+      return;
+    }
+    setTimeout(typeLoop, 80);
+  }
+}
+
+if (typingEl) typeLoop();
+
+// Back-to-top button
+const backToTop = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+  if (backToTop) {
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  }
+});
+
+if (backToTop) {
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
