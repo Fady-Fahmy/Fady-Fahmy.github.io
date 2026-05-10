@@ -72,9 +72,16 @@ const fadeObserver = new IntersectionObserver(entries => {
       fadeObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.08 });
+}, { threshold: 0 });
 
-document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+document.querySelectorAll('.fade-in').forEach(el => {
+  const rect = el.getBoundingClientRect();
+  if (rect.top < window.innerHeight && rect.bottom > 0) {
+    el.classList.add('visible');
+  } else {
+    fadeObserver.observe(el);
+  }
+});
 
 // Typing animation
 const typingEl = document.querySelector('.hero-typing');
