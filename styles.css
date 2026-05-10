@@ -71,9 +71,28 @@ header {
   gap: 24px;
 }
 
+.logo-mono {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--accent);
+  border-radius: 8px;
+  flex-shrink: 0;
+  letter-spacing: -0.5px;
+  transition: background 0.15s;
+}
+
+.logo-mono:hover { background: var(--accent-bg); }
+
 nav {
-  border-left: 1px solid var(--border);
-  padding-left: 24px;
+  padding-left: 8px;
 }
 
 nav ul {
@@ -156,7 +175,7 @@ nav ul li a.active {
 .hero-inner {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 56px 32px 48px;
+  padding: 36px 32px 36px;
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
@@ -193,14 +212,6 @@ nav ul li a.active {
   50%       { box-shadow: 0 0 0 5px rgba(74, 222, 128, 0); }
 }
 
-.hero-eyebrow {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 10px;
-}
 
 .hero h1 {
   font-family: 'Lora', serif;
@@ -243,20 +254,25 @@ nav ul li a.active {
 
 .hero-meta {
   display: flex;
-  gap: 20px;
+  gap: 8px;
   flex-wrap: wrap;
   margin-bottom: 28px;
 }
 
 .meta-item {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 13px;
-  color: var(--text-light);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text);
+  background: rgba(34, 211, 238, 0.06);
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  border-radius: 20px;
+  padding: 5px 12px;
 }
 
-.meta-item svg { flex-shrink: 0; }
+.meta-item svg { flex-shrink: 0; opacity: 0.7; }
 
 .hero-actions {
   display: flex;
