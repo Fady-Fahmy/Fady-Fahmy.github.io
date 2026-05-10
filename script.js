@@ -50,7 +50,7 @@ document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
 
 // Typing animation
 const typingEl = document.querySelector('.hero-typing');
-const phrases = ['IAM & Identity Specialist', 'Endpoint Security Engineer', 'Cloud Operations Consultant'];
+const phrases = ['IAM Specialist', 'IT Operations Engineer', 'Cloud Engineer ', 'Security Analyst'];
 let phraseIndex = 0;
 let charIndex = 0;
 let deleting = false;
