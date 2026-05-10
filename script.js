@@ -82,7 +82,7 @@ function typeLoop() {
 if (typingEl) typeLoop();
 
 // Back-to-top button
-const backToTop = document.getElementById('back-to-top');
+const backToTop = document.getElementById('backToTop');
 
 window.addEventListener('scroll', () => {
   if (backToTop) {
