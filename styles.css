@@ -133,7 +133,7 @@ nav ul li a.active {
 
 .header-icon-link:hover { background: var(--accent-bg); }
 
-.header-icon-img { width: 20px; height: 20px; filter: brightness(0) saturate(100%) invert(67%) sepia(10%) saturate(400%) hue-rotate(180deg) brightness(90%); }
+.header-icon-img { width: 20px; height: 20px; filter: brightness(0) invert(1) opacity(0.8); }
 
 /* ── Hamburger toggle ── */
 .nav-toggle {
