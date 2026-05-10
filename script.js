@@ -1,3 +1,31 @@
+// Hamburger menu
+const navToggle = document.querySelector('.nav-toggle');
+const navEl = document.querySelector('nav');
+
+if (navToggle && navEl) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = navEl.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  navEl.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navEl.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  document.addEventListener('click', e => {
+    if (!navEl.contains(e.target) && !navToggle.contains(e.target)) {
+      navEl.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
+
 document.querySelectorAll('[data-email]').forEach(el => {
   el.href = 'mailto:' + atob(el.dataset.email);
 });
