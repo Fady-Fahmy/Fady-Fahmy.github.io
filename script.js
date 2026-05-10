@@ -47,7 +47,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Active nav state driven by scroll
-const sections = document.querySelectorAll('#experience, #projects, #education, #certifications, #skills');
+const sections = document.querySelectorAll('#experience, #projects, #skills, #education, #certifications');
 
 const navObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
