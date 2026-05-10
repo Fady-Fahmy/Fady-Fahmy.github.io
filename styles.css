@@ -329,73 +329,6 @@ nav ul li a.active {
   letter-spacing: 0.3px;
 }
 
-/* ================================================
-   KEY HIGHLIGHTS
-   ================================================ */
-.wins-bar {
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  padding: 36px 0;
-}
-
-.wins-inner {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 32px;
-}
-
-.wins-label {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  color: var(--text-light);
-  margin-bottom: 16px;
-}
-
-.wins-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-
-.win-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  padding: 18px;
-  background: var(--bg-white);
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
-  border-radius: 10px;
-  transition: transform 0.2s ease;
-}
-
-.win-card:hover { transform: translateY(-2px); }
-
-.win-icon {
-  flex-shrink: 0;
-  width: 38px;
-  height: 38px;
-  background: var(--accent-bg);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.win-title {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text-dark);
-  margin-bottom: 5px;
-}
-
-.win-desc {
-  font-size: 12px;
-  color: var(--text-light);
-  line-height: 1.55;
-}
 
 /* ================================================
    LAYOUT — TWO COLUMN
@@ -922,7 +855,7 @@ footer {
   .hero-photo { display: none; }
   .stats-inner { flex-wrap: wrap; }
   .stat { flex: 1 1 50%; }
-  .wins-grid { grid-template-columns: 1fr; }
+
 }
 
 @media (max-width: 600px) {
@@ -939,7 +872,7 @@ footer {
    PRINT
    ================================================ */
 @media print {
-  header, .back-to-top, .wins-bar, .hero-photo, .hero-actions, footer { display: none !important; }
+  header, .back-to-top, .hero-photo, .hero-actions, footer { display: none !important; }
   body { background: #fff; color: #111; font-size: 11pt; line-height: 1.4; }
   .hero { background: #fff; border: none; padding: 0; }
   .open-to-work, .hero-eyebrow, .hero-tagline { display: none; }
