@@ -566,6 +566,12 @@ nav ul li a.active {
   border: 1px solid var(--green-border);
 }
 
+.project-status.completed {
+  color: var(--text-light);
+  background: rgba(107, 130, 160, 0.1);
+  border: 1px solid rgba(107, 130, 160, 0.2);
+}
+
 .project-link {
   display: inline-flex;
   align-items: center;
