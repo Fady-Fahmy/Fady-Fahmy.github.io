@@ -281,17 +281,20 @@ nav ul li a.active {
 }
 
 .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 14px;
   font-weight: 500;
-  padding: 11px 24px;
-  background: var(--accent);
+  padding: 11px 22px;
+  background: #0891b2;
   color: #fff;
-  border-radius: 8px;
+  border-radius: 6px;
   text-decoration: none;
   transition: background 0.15s, transform 0.15s;
 }
 
-.btn-primary:hover { background: #06b6d4; transform: translateY(-1px); }
+.btn-primary:hover { background: #0e7490; transform: translateY(-1px); }
 
 .btn-secondary {
   display: inline-flex;
@@ -299,11 +302,11 @@ nav ul li a.active {
   gap: 8px;
   font-size: 14px;
   font-weight: 500;
-  padding: 11px 24px;
-  background: rgba(34, 211, 238, 0.15);
+  padding: 11px 22px;
+  background: rgba(34, 211, 238, 0.08);
   color: var(--accent);
   border: 1px solid var(--accent);
-  border-radius: 8px;
+  border-radius: 6px;
   text-decoration: none;
   transition: background 0.15s;
 }
