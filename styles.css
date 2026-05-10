@@ -71,33 +71,6 @@ header {
   gap: 24px;
 }
 
-.header-logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-shrink: 0;
-  text-decoration: none;
-}
-
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
-
-.logo-name {
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--text-dark);
-  letter-spacing: -0.2px;
-}
-
-.logo-sub {
-  font-size: 11px;
-  color: var(--text-light);
-  letter-spacing: 0.3px;
-}
-
 nav {
   border-left: 1px solid var(--border);
   padding-left: 24px;
@@ -892,7 +865,6 @@ footer {
   .stats-inner { padding: 0 16px; }
   .content-wrap { padding: 24px 16px 48px; }
   nav ul li a { font-size: 12px; padding: 5px 8px; }
-  .logo-sub { display: none; }
 }
 
 /* ================================================
