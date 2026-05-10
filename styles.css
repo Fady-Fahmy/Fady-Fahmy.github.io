@@ -614,33 +614,6 @@ nav ul li a.active {
   flex-wrap: wrap;
 }
 
-.skill-tier {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  padding: 2px 7px;
-  border-radius: 4px;
-  flex-shrink: 0;
-}
-
-.skill-tier.expert {
-  color: var(--green);
-  background: var(--green-bg);
-  border: 1px solid var(--green-border);
-}
-
-.skill-tier.proficient {
-  color: var(--accent);
-  background: var(--accent-bg);
-  border: 1px solid rgba(96, 165, 250, 0.25);
-}
-
-.skill-tier.familiar {
-  color: var(--text-light);
-  background: rgba(107, 130, 160, 0.1);
-  border: 1px solid rgba(107, 130, 160, 0.2);
-}
 
 .skill-tags {
   display: flex;
