@@ -1,3 +1,7 @@
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
+}
+
 // Hamburger menu
 const navToggle = document.querySelector('.nav-toggle');
 const navEl = document.querySelector('nav');
