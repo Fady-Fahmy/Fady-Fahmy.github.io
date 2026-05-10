@@ -473,7 +473,7 @@ nav ul li a.active {
   flex-wrap: wrap;
 }
 
-.exp-logo-row { display: flex; align-items: center; gap: 12px; }
+.exp-logo-row { display: flex; align-items: center; gap: 12px; width: 100%; }
 
 .company-logo {
   width: 36px;
