@@ -931,7 +931,21 @@ nav ul li a.active {
 /* ================================================
    SKILLS
    ================================================ */
-.skill-group { margin-bottom: 18px; }
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px 32px;
+}
+
+@media (max-width: 900px) {
+  .skill-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .skill-grid { grid-template-columns: 1fr; }
+}
+
+.skill-group { margin-bottom: 0; }
 .skill-group:last-child { margin-bottom: 0; }
 
 .skill-group-label {
