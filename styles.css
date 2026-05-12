@@ -424,6 +424,151 @@ nav ul li a.active {
 /* ================================================
    EXPERIENCE
    ================================================ */
+
+/* ── EXPERIENCE TABS ── */
+.exp-card > .card-body { padding: 0; }
+
+.exp-tabs-wrap {
+  display: flex;
+  min-height: 420px;
+}
+
+.exp-tab-list {
+  display: flex;
+  flex-direction: column;
+  width: 165px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--border);
+  padding: 8px 0;
+}
+
+.exp-tab {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  background: none;
+  border: none;
+  border-right: 2px solid transparent;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  color: var(--text-light);
+  font-family: 'Inter', sans-serif;
+}
+
+.exp-tab:hover {
+  background: var(--accent-bg);
+  color: var(--text);
+  border-right-color: rgba(34, 211, 238, 0.3);
+}
+
+.exp-tab.active {
+  background: var(--accent-bg);
+  color: var(--text-dark);
+  border-right: 2px solid var(--accent);
+}
+
+.tab-logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+.tab-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tab-company {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.tab-date {
+  font-size: 10px;
+  color: var(--text-light);
+}
+
+.exp-tab.active .tab-date { color: var(--text); }
+
+.exp-panels {
+  flex: 1;
+  padding: 24px 24px 24px 28px;
+  overflow: hidden;
+}
+
+.exp-panel { display: none; }
+
+.exp-panel.active {
+  display: block;
+  animation: fadePanel 0.2s ease;
+}
+
+@keyframes fadePanel {
+  from { opacity: 0; transform: translateX(6px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.exp-panel-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.exp-at {
+  color: var(--text-light);
+  font-weight: 400;
+  margin: 0 4px;
+}
+
+.exp-co { color: var(--accent); }
+
+.exp-panel-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.exp-loc {
+  font-size: 13px;
+  color: var(--text-light);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 640px) {
+  .exp-tabs-wrap { flex-direction: column; }
+  .exp-tab-list {
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+  }
+  .exp-tab {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+    border-right: none;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+  }
+  .exp-tab:hover  { border-right-color: transparent; border-bottom-color: rgba(34,211,238,0.3); }
+  .exp-tab.active { border-right: none; border-bottom: 2px solid var(--accent); }
+  .tab-date { display: none; }
+  .exp-panels { padding: 20px 16px; }
+}
+
 .exp-timeline {
   position: relative;
   padding-left: 20px;
