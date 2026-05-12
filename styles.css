@@ -61,7 +61,7 @@ header {
 }
 
 .header-content {
-  max-width: 1080px;
+  max-width: 1400px;
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -173,7 +173,7 @@ nav ul li a.active {
 }
 
 .hero-inner {
-  max-width: 1080px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 36px 32px 36px;
   display: grid;
@@ -338,7 +338,7 @@ nav ul li a.active {
 .stats-bar { background: #091522; }
 
 .stats-inner {
-  max-width: 1080px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 32px;
   display: flex;
@@ -373,7 +373,7 @@ nav ul li a.active {
    LAYOUT — TWO COLUMN
    ================================================ */
 .content-wrap {
-  max-width: 1080px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 40px 32px 60px;
   display: grid;
