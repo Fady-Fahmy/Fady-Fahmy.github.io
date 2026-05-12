@@ -128,23 +128,55 @@
   <div class="main-col">
 
     <!-- EXPERIENCE -->
-    <div class="card fade-in" id="experience">
+    <div class="card fade-in exp-card" id="experience">
       <div class="card-header">
         <h2 class="card-title">Work Experience</h2>
       </div>
       <div class="card-body">
-        <div class="exp-timeline">
+        <div class="exp-tabs-wrap">
 
-          <div class="exp-entry">
-            <div class="exp-top">
-              <div class="exp-logo-row">
-                <img src="gotham-logo.png" alt="Gotham Technology Group" class="company-logo" loading="lazy">
-                <span class="exp-role">IT Consultant</span>
+          <!-- SIDEBAR TABS -->
+          <div class="exp-tab-list">
+            <button class="exp-tab active" data-tab="gotham">
+              <img src="gotham-logo.png" alt="Gotham" class="tab-logo" loading="lazy">
+              <div class="tab-meta">
+                <span class="tab-company">Gotham</span>
+                <span class="tab-date">Aug 2025 – Present</span>
+              </div>
+            </button>
+            <button class="exp-tab" data-tab="cji">
+              <img src="cji-logo.png" alt="CJI" class="tab-logo" loading="lazy">
+              <div class="tab-meta">
+                <span class="tab-company">CJI</span>
+                <span class="tab-date">Nov 2024 – Mar 2025</span>
+              </div>
+            </button>
+            <button class="exp-tab" data-tab="moore">
+              <img src="moore-logo.png" alt="Moore Capital" class="tab-logo" loading="lazy">
+              <div class="tab-meta">
+                <span class="tab-company">Moore Capital</span>
+                <span class="tab-date">May 2024 – Aug 2024</span>
+              </div>
+            </button>
+            <button class="exp-tab" data-tab="nypd">
+              <img src="nypd-logo.png" alt="NYPD" class="tab-logo" loading="lazy">
+              <div class="tab-meta">
+                <span class="tab-company">NYPD</span>
+                <span class="tab-date">Jun 2023 – Apr 2025</span>
+              </div>
+            </button>
+          </div>
+
+          <!-- PANELS -->
+          <div class="exp-panels">
+
+            <div class="exp-panel active" id="tab-gotham">
+              <h3 class="exp-panel-title">IT Consultant <span class="exp-at">@</span> <span class="exp-co">Gotham Technology Group</span></h3>
+              <div class="exp-panel-meta">
                 <span class="exp-type">Contract</span>
                 <span class="exp-period">Aug 2025 – Present</span>
               </div>
-            </div>
-            <p class="exp-company">Gotham Technology Group — Manhattan, NYC</p>
+              <p class="exp-loc">Manhattan, NYC</p>
             <ul class="exp-list">
               <li>Administer Active Directory Domain Services (AD DS) and Intune MDM for a global financial services firm across the Americas, EMEA, and APAC, managing OUs, security groups, application groups, distribution lists, GPOs, and storage access provisioning.</li>
               <li>Oversee Microsoft 365 and Entra ID environments, managing Exchange Online, user licensing, mailbox configurations, conditional access policies, and cloud identity operations across a global tenant.</li>
@@ -161,66 +193,58 @@
               <li>Provide hands-on support for conference room A/V environments, ensuring consistent readiness across C-suite meetings, executive presentations, training rooms, and company-wide headquarters events.</li>
               <li>Create and maintain IT knowledge bases documenting recurring issues, runbooks, and SOPs to reduce resolution time, accelerate onboarding of incoming IT staff, and provide guidance for current users.</li>
             </ul>
-          </div>
+            </div>
 
-          <div class="exp-entry">
-            <div class="exp-top">
-              <div class="exp-logo-row">
-                <img src="cji-logo.png" alt="Center for Justice Innovation" class="company-logo" loading="lazy">
-                <span class="exp-role">Technical Support Analyst</span>
+            <div class="exp-panel" id="tab-cji">
+              <h3 class="exp-panel-title">Technical Support Analyst <span class="exp-at">@</span> <span class="exp-co">Center for Justice Innovation</span></h3>
+              <div class="exp-panel-meta">
                 <span class="exp-type">Apprenticeship</span>
                 <span class="exp-period">Nov 2024 – Mar 2025</span>
               </div>
+              <p class="exp-loc">Manhattan, NYC</p>
+              <ul class="exp-list">
+                <li>Administered Active Directory and MDM for 900+ users across 6 locations, managing user accounts, group policies, security groups, and device compliance.</li>
+                <li>Managed IT asset lifecycle — imaging, deployment, and decommissioning — for 200+ laptops and mobile devices.</li>
+                <li>Provided Level 1 &amp; 2 helpdesk support via Jira for users onsite at headquarters, across 6 locations, and remotely, resolving hardware, software, and connectivity issues.</li>
+                <li>Deployed, configured, and decommissioned laptops, PCs, and mobile devices, including full workstation setup with monitors, docking stations, peripherals, and printers.</li>
+                <li>Traveled to branch offices to deploy and configure IT hardware and train staff, streamlining onboarding for new hires.</li>
+                <li>Configured and supported conference room A/V systems, and camera setups to enable reliable hybrid collaboration across teams.</li>
+              </ul>
             </div>
-            <p class="exp-company">Center for Justice Innovation — Manhattan, NYC</p>
-            <ul class="exp-list">
-              <li>Administered Active Directory and MDM for 900+ users across 6 locations, managing user accounts, group policies, security groups, and device compliance.</li>
-              <li>Managed IT asset lifecycle — imaging, deployment, and decommissioning — for 200+ laptops and mobile devices.</li>
-              <li>Provided Level 1 &amp; 2 helpdesk support via Jira for users onsite at headquarters, across 6 locations, and remotely, resolving hardware, software, and connectivity issues.</li>
-              <li>Deployed, configured, and decommissioned laptops, PCs, and mobile devices, including full workstation setup with monitors, docking stations, peripherals, and printers.</li>
-              <li>Traveled to branch offices to deploy and configure IT hardware and train staff, streamlining onboarding for new hires.</li>
-              <li>Configured and supported conference room A/V systems, and camera setups to enable reliable hybrid collaboration across teams.</li>
-            </ul>
-          </div>
 
-          <div class="exp-entry">
-            <div class="exp-top">
-              <div class="exp-logo-row">
-                <img src="moore-logo.png" alt="Moore Capital Management" class="company-logo" loading="lazy">
-                <span class="exp-role">IT Intern</span>
+            <div class="exp-panel" id="tab-moore">
+              <h3 class="exp-panel-title">IT Intern <span class="exp-at">@</span> <span class="exp-co">Moore Capital Management</span></h3>
+              <div class="exp-panel-meta">
                 <span class="exp-type">Internship</span>
                 <span class="exp-period">May 2024 – Aug 2024</span>
               </div>
+              <p class="exp-loc">Manhattan, NYC</p>
+              <ul class="exp-list">
+                <li>Provided Level 1 support to the trading floor, minimizing downtime during peak market hours.</li>
+                <li>Collaborated with the Senior Security Engineer to implement DLP USB device control solutions, integrating user lifecycle processes with endpoint security measures to protect sensitive trading floor data.</li>
+                <li>Built and deployed 150+ user workstations with full desk setups, including monitors, docking stations, and desktop VoIP phones.</li>
+                <li>Resolved end user issues via the ticketing system, delivering timely technical support to 300+ employees.</li>
+                <li>Configured and maintained Zoom conference rooms enterprise-wide, including Logitech camera setup and integration.</li>
+                <li>Developed a comprehensive company-wide application inventory, driving timely updates, batch processing, and decommissioning of obsolete applications.</li>
+              </ul>
             </div>
-            <p class="exp-company">Moore Capital Management — Manhattan, NYC</p>
-            <ul class="exp-list">
-              <li>Provided Level 1 support to the trading floor, minimizing downtime during peak market hours.</li>
-              <li>Collaborated with the Senior Security Engineer to implement DLP USB device control solutions, integrating user lifecycle processes with endpoint security measures to protect sensitive trading floor data.</li>
-              <li>Built and deployed 150+ user workstations with full desk setups, including monitors, docking stations, and desktop VoIP phones.</li>
-              <li>Resolved end user issues via the ticketing system, delivering timely technical support to 300+ employees.</li>
-              <li>Configured and maintained Zoom conference rooms enterprise-wide, including Logitech camera setup and integration.</li>
-              <li>Developed a comprehensive company-wide application inventory, driving timely updates, batch processing, and decommissioning of obsolete applications.</li>
-            </ul>
-          </div>
 
-          <div class="exp-entry">
-            <div class="exp-top">
-              <div class="exp-logo-row">
-                <img src="nypd-logo.png" alt="NYPD" class="company-logo" loading="lazy">
-                <span class="exp-role">Police Cadet</span>
+            <div class="exp-panel" id="tab-nypd">
+              <h3 class="exp-panel-title">Police Cadet <span class="exp-at">@</span> <span class="exp-co">NYPD</span></h3>
+              <div class="exp-panel-meta">
                 <span class="exp-type">Internship</span>
                 <span class="exp-period">Jun 2023 – Apr 2025</span>
               </div>
+              <p class="exp-loc">Manhattan, NYC</p>
+              <ul class="exp-list">
+                <li>Operated NYPD software systems to gather, process, and share information daily.</li>
+                <li>Assisted officers with arrest processing documents and accurate reports for criminal cases.</li>
+                <li>Completed training on the NYC criminal justice system, legal procedures, and operations.</li>
+                <li>Certified in First Aid, CPR, and AED.</li>
+              </ul>
             </div>
-            <p class="exp-company">NYPD — Manhattan, NYC</p>
-            <ul class="exp-list">
-              <li>Operated NYPD software systems to gather, process, and share information daily.</li>
-              <li>Assisted officers with arrest processing documents and accurate reports for criminal cases.</li>
-              <li>Completed training on the NYC criminal justice system, legal procedures, and operations.</li>
-              <li>Certified in First Aid, CPR, and AED.</li>
-            </ul>
-          </div>
 
+          </div>
         </div>
       </div>
     </div>
