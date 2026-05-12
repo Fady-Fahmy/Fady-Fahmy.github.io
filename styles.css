@@ -382,8 +382,8 @@ nav ul li a.active {
   align-items: start;
 }
 
-.main-col { display: flex; flex-direction: column; gap: 24px; }
-.side-col  { display: flex; flex-direction: column; gap: 24px; }
+.main-col { display: flex; flex-direction: column; gap: 24px; min-width: 0; }
+.side-col  { display: flex; flex-direction: column; gap: 24px; min-width: 0; overflow: hidden; }
 
 /* ================================================
    CARDS
@@ -1157,6 +1157,7 @@ nav ul li a.active {
   scroll-behavior: smooth;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  container-type: inline-size;
 }
 
 .cert-track-outer::-webkit-scrollbar { display: none; }
@@ -1168,11 +1169,16 @@ nav ul li a.active {
 
 .cert-slide {
   flex-shrink: 0;
+  width: calc((100cqi - 3 * 12px) / 4);
   scroll-snap-align: start;
 }
 
 .cert-slide .cert-item {
   width: 100%;
+}
+
+@container (max-width: 520px) {
+  .cert-slide { width: calc((100cqi - 12px) / 2); }
 }
 
 .cert-dots {
