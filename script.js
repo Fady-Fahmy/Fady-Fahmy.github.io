@@ -154,3 +154,71 @@ if (backToTop) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
+
+// Certifications carousel
+(function () {
+  const outer   = document.querySelector('.cert-track-outer');
+  const track   = document.querySelector('.cert-track');
+  const slides  = Array.from(document.querySelectorAll('.cert-slide'));
+  const prevBtn = document.querySelector('.cert-prev');
+  const nextBtn = document.querySelector('.cert-next');
+  const dotsWrap = document.querySelector('.cert-dots');
+
+  if (!outer || !slides.length) return;
+
+  const GAP = 12;
+  let currentPage = 0;
+
+  function perPage() { return window.innerWidth <= 640 ? 2 : 4; }
+  function totalPages() { return Math.ceil(slides.length / perPage()); }
+  function slideWidth() { return (outer.clientWidth - GAP * (perPage() - 1)) / perPage(); }
+
+  function setSlideSizes() {
+    const w = slideWidth();
+    slides.forEach(s => { s.style.width = w + 'px'; });
+  }
+
+  function buildDots() {
+    dotsWrap.innerHTML = '';
+    for (let i = 0; i < totalPages(); i++) {
+      const btn = document.createElement('button');
+      btn.className = 'cert-dot' + (i === currentPage ? ' active' : '');
+      btn.setAttribute('aria-label', 'Page ' + (i + 1));
+      btn.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(btn);
+    }
+  }
+
+  function updateState() {
+    prevBtn.disabled = currentPage === 0;
+    nextBtn.disabled = currentPage >= totalPages() - 1;
+    dotsWrap.querySelectorAll('.cert-dot').forEach((d, i) =>
+      d.classList.toggle('active', i === currentPage)
+    );
+  }
+
+  function goTo(page) {
+    currentPage = Math.max(0, Math.min(page, totalPages() - 1));
+    const offset = currentPage * (outer.clientWidth + GAP);
+    track.style.transform = `translateX(-${offset}px)`;
+    updateState();
+  }
+
+  prevBtn.addEventListener('click', () => goTo(currentPage - 1));
+  nextBtn.addEventListener('click', () => goTo(currentPage + 1));
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      currentPage = 0;
+      setSlideSizes();
+      buildDots();
+      goTo(0);
+    }, 200);
+  });
+
+  setSlideSizes();
+  buildDots();
+  goTo(0);
+})();
