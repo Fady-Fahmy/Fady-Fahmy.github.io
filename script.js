@@ -2,6 +2,16 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js');
 }
 
+// Project tabs
+document.querySelectorAll('.proj-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.proj-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.proj-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('proj-' + tab.dataset.proj).classList.add('active');
+  });
+});
+
 // Experience tabs
 document.querySelectorAll('.exp-tab').forEach(tab => {
   tab.addEventListener('click', () => {
