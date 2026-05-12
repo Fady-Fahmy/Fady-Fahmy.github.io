@@ -168,18 +168,12 @@ if (backToTop) {
   const GAP = 12;
   let currentPage = 0;
 
-  function perPage() { return window.innerWidth <= 640 ? 2 : 4; }
-  function totalPages() { return Math.ceil(slides.length / perPage()); }
-
-  function setSlideSizes() {
-    if (!outer.clientWidth) return;
-    const pp = perPage();
-    const w = (outer.clientWidth - GAP * (pp - 1)) / pp;
-    slides.forEach((s, i) => {
-      s.style.width = w + 'px';
-      s.style.scrollSnapAlign = i % pp === 0 ? 'start' : 'none';
-    });
+  // Derive perPage from actual CSS-rendered slide width vs outer width
+  function perPage() {
+    const sw = slides[0].offsetWidth;
+    return sw > 0 ? Math.round((outer.clientWidth + GAP) / (sw + GAP)) : 4;
   }
+  function totalPages() { return Math.ceil(slides.length / perPage()); }
 
   function buildDots() {
     dotsWrap.innerHTML = '';
@@ -206,13 +200,16 @@ if (backToTop) {
     updateState();
   }
 
-  // Sync dots/arrows after touch swipe settles
+  // Sync dots/arrows after touch swipe or free scroll settles
   let scrollTimer;
   outer.addEventListener('scroll', () => {
     clearTimeout(scrollTimer);
     scrollTimer = setTimeout(() => {
-      const snapped = Math.round(outer.scrollLeft / (outer.clientWidth + GAP));
-      const clamped = Math.max(0, Math.min(snapped, totalPages() - 1));
+      const sw = slides[0].offsetWidth;
+      if (!sw) return;
+      const firstVisible = Math.floor(outer.scrollLeft / (sw + GAP));
+      const page = Math.floor(firstVisible / perPage());
+      const clamped = Math.max(0, Math.min(page, totalPages() - 1));
       if (clamped !== currentPage) { currentPage = clamped; updateState(); }
     }, 150);
   }, { passive: true });
@@ -225,15 +222,13 @@ if (backToTop) {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
       currentPage = 0;
-      setSlideSizes();
-      buildDots();
       outer.scrollTo({ left: 0, behavior: 'instant' });
+      buildDots();
       updateState();
     }, 200);
   });
 
   requestAnimationFrame(() => {
-    setSlideSizes();
     buildDots();
     updateState();
   });
