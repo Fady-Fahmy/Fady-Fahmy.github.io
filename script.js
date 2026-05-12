@@ -157,11 +157,10 @@ if (backToTop) {
 
 // Certifications carousel
 (function () {
-  const outer   = document.querySelector('.cert-track-outer');
-  const track   = document.querySelector('.cert-track');
-  const slides  = Array.from(document.querySelectorAll('.cert-slide'));
-  const prevBtn = document.querySelector('.cert-prev');
-  const nextBtn = document.querySelector('.cert-next');
+  const outer    = document.querySelector('.cert-track-outer');
+  const slides   = Array.from(document.querySelectorAll('.cert-slide'));
+  const prevBtn  = document.querySelector('.cert-prev');
+  const nextBtn  = document.querySelector('.cert-next');
   const dotsWrap = document.querySelector('.cert-dots');
 
   if (!outer || !slides.length) return;
@@ -171,11 +170,15 @@ if (backToTop) {
 
   function perPage() { return window.innerWidth <= 640 ? 2 : 4; }
   function totalPages() { return Math.ceil(slides.length / perPage()); }
-  function slideWidth() { return (outer.clientWidth - GAP * (perPage() - 1)) / perPage(); }
 
   function setSlideSizes() {
-    const w = slideWidth();
-    slides.forEach(s => { s.style.width = w + 'px'; });
+    if (!outer.clientWidth) return;
+    const pp = perPage();
+    const w = (outer.clientWidth - GAP * (pp - 1)) / pp;
+    slides.forEach((s, i) => {
+      s.style.width = w + 'px';
+      s.style.scrollSnapAlign = i % pp === 0 ? 'start' : 'none';
+    });
   }
 
   function buildDots() {
@@ -199,10 +202,20 @@ if (backToTop) {
 
   function goTo(page) {
     currentPage = Math.max(0, Math.min(page, totalPages() - 1));
-    const offset = currentPage * (outer.clientWidth + GAP);
-    track.style.transform = `translateX(-${offset}px)`;
+    outer.scrollTo({ left: currentPage * (outer.clientWidth + GAP), behavior: 'smooth' });
     updateState();
   }
+
+  // Sync dots/arrows after touch swipe settles
+  let scrollTimer;
+  outer.addEventListener('scroll', () => {
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(() => {
+      const snapped = Math.round(outer.scrollLeft / (outer.clientWidth + GAP));
+      const clamped = Math.max(0, Math.min(snapped, totalPages() - 1));
+      if (clamped !== currentPage) { currentPage = clamped; updateState(); }
+    }, 150);
+  }, { passive: true });
 
   prevBtn.addEventListener('click', () => goTo(currentPage - 1));
   nextBtn.addEventListener('click', () => goTo(currentPage + 1));
@@ -214,11 +227,14 @@ if (backToTop) {
       currentPage = 0;
       setSlideSizes();
       buildDots();
-      goTo(0);
+      outer.scrollTo({ left: 0, behavior: 'instant' });
+      updateState();
     }, 200);
   });
 
-  setSlideSizes();
-  buildDots();
-  goTo(0);
+  requestAnimationFrame(() => {
+    setSlideSizes();
+    buildDots();
+    updateState();
+  });
 })();
