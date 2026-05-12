@@ -1150,18 +1150,29 @@ nav ul li a.active {
 
 .cert-track-outer {
   flex: 1;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   min-width: 0;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+
+.cert-track-outer::-webkit-scrollbar { display: none; }
 
 .cert-track {
   display: flex;
   gap: 12px;
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cert-slide {
   flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.cert-slide .cert-item {
+  width: 100%;
 }
 
 .cert-dots {
