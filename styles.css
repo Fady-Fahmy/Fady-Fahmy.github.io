@@ -436,7 +436,7 @@ nav ul li a.active {
 .exp-tab-list {
   display: flex;
   flex-direction: column;
-  width: 165px;
+  width: 210px;
   flex-shrink: 0;
   border-right: 1px solid var(--border);
   padding: 8px 0;
