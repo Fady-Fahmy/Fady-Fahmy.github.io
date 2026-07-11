@@ -1,2 +1,9 @@
 .claude/worktrees/goofy-mcclintock-693ec2/
 .claude/worktrees/peaceful-neumann-192fb4/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
